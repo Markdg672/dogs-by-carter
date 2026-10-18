@@ -100,7 +100,7 @@ function Index() {
       </header>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="mb-16 text-center"><h2 className="font-display text-6xl font-semibold leading-none tracking-tight text-primary md:text-8xl">Our Services</h2><div className="mx-auto mt-6 h-1.5 w-28 rounded-full bg-highlight" /></div>
+        <div className="mb-16 text-center"><h2 className="font-display text-6xl font-semibold leading-none tracking-tight text-primary md:text-8xl">Our Services</h2><div className="mx-auto mt-6 h-2 w-32 rounded-full bg-accent" /></div>
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((s) => (
             <article key={s.name} className="overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
@@ -118,7 +118,7 @@ function Index() {
               <div className="p-8">
                 <p className="text-base font-bold uppercase tracking-[0.12em] text-accent">{s.tag}</p>
                 <h3 className="mt-2 text-3xl text-primary md:text-4xl">{s.name}</h3>
-                <ul className="mt-5 space-y-2 text-2xl text-foreground">
+                <ul className="mt-5 space-y-2 text-2xl font-medium text-foreground">
                   {s.lines.map((l) => (
                     <li key={l}>{l}</li>
                   ))}
@@ -171,7 +171,7 @@ function Index() {
           Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
           <span className="text-highlight">Carter</span>
         </p>
-        <p className="mt-4 text-lg">© {new Date().getFullYear()} Dogs by Carter · {PHONE}</p>
+        <p className="mt-4 text-xl">© {new Date().getFullYear()} Dogs by Carter · {PHONE}</p>
       </footer>
     </main>
   );
