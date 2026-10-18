@@ -62,8 +62,11 @@ function Index() {
     <main>
       <header className="bg-ink text-ink-foreground">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <span className="font-display text-2xl">Dogs by Carter</span>
-          <a href={`tel:${PHONE}`} className="rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink">
+          <span className="font-display text-3xl font-semibold leading-none tracking-tight md:text-5xl">
+            Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
+            <span className="text-highlight">Carter</span>
+          </span>
+          <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink md:px-5 md:text-lg">
             {PHONE}
           </a>
         </nav>
@@ -97,7 +100,7 @@ function Index() {
       </header>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="mb-14 text-center"><p className="text-base font-bold uppercase tracking-[0.2em] text-accent">What we offer</p><h2 className="mt-3 text-5xl text-primary md:text-6xl">Our Services</h2><div className="mx-auto mt-5 h-1 w-20 rounded-full bg-highlight" /></div>
+        <div className="mb-14 text-center"><h2 className="text-5xl text-primary md:text-6xl">Our Services</h2><div className="mx-auto mt-5 h-1 w-20 rounded-full bg-highlight" /></div>
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((s) => (
             <article key={s.name} className="overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
@@ -163,8 +166,12 @@ function Index() {
         </div>
       </section>
 
-      <footer className="bg-ink px-6 pb-10 text-center text-base text-ink-foreground ">
-        © {new Date().getFullYear()} Dogs by Carter
+      <footer className="bg-ink px-6 pb-12 pt-12 text-center text-ink-foreground">
+        <p className="font-display text-3xl font-semibold leading-none tracking-tight md:text-4xl">
+          Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
+          <span className="text-highlight">Carter</span>
+        </p>
+        <p className="mt-4 text-base">© {new Date().getFullYear()} Dogs by Carter · {PHONE}</p>
       </footer>
     </main>
   );
