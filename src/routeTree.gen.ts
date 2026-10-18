@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BoardingByCarterRouteImport } from './routes/boarding-by-carter'
+import { Route as CoachingByCarterRouteImport } from './routes/coaching-by-carter'
 import { Route as TrainingByCarterRouteImport } from './routes/training-by-carter'
 
 const IndexRoute = IndexRouteImport.update({
@@ -23,6 +24,11 @@ const BoardingByCarterRoute = BoardingByCarterRouteImport.update({
   path: '/boarding-by-carter',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CoachingByCarterRoute = CoachingByCarterRouteImport.update({
+  id: '/coaching-by-carter',
+  path: '/coaching-by-carter',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TrainingByCarterRoute = TrainingByCarterRouteImport.update({
   id: '/training-by-carter',
   path: '/training-by-carter',
@@ -32,30 +38,41 @@ const TrainingByCarterRoute = TrainingByCarterRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/boarding-by-carter': typeof BoardingByCarterRoute
+  '/coaching-by-carter': typeof CoachingByCarterRoute
   '/training-by-carter': typeof TrainingByCarterRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/boarding-by-carter': typeof BoardingByCarterRoute
+  '/coaching-by-carter': typeof CoachingByCarterRoute
   '/training-by-carter': typeof TrainingByCarterRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/boarding-by-carter': typeof BoardingByCarterRoute
+  '/coaching-by-carter': typeof CoachingByCarterRoute
   '/training-by-carter': typeof TrainingByCarterRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/boarding-by-carter' | '/training-by-carter'
+  fullPaths:
+    '/' | '/boarding-by-carter' | '/coaching-by-carter' | '/training-by-carter'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/boarding-by-carter' | '/training-by-carter'
-  id: '__root__' | '/' | '/boarding-by-carter' | '/training-by-carter'
+  to:
+    '/' | '/boarding-by-carter' | '/coaching-by-carter' | '/training-by-carter'
+  id:
+    | '__root__'
+    | '/'
+    | '/boarding-by-carter'
+    | '/coaching-by-carter'
+    | '/training-by-carter'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BoardingByCarterRoute: typeof BoardingByCarterRoute
+  CoachingByCarterRoute: typeof CoachingByCarterRoute
   TrainingByCarterRoute: typeof TrainingByCarterRoute
 }
 
@@ -75,6 +92,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BoardingByCarterRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/coaching-by-carter': {
+      id: '/coaching-by-carter'
+      path: '/coaching-by-carter'
+      fullPath: '/coaching-by-carter'
+      preLoaderRoute: typeof CoachingByCarterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/training-by-carter': {
       id: '/training-by-carter'
       path: '/training-by-carter'
@@ -88,6 +112,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BoardingByCarterRoute: BoardingByCarterRoute,
+  CoachingByCarterRoute: CoachingByCarterRoute,
   TrainingByCarterRoute: TrainingByCarterRoute,
 }
 export const routeTree = rootRouteImport

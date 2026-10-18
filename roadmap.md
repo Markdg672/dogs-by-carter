@@ -10,6 +10,8 @@
 - Removed the "What we offer" label above Our Services
 - Added Training by Carter page with its original photos, bottom contact details, and homepage links
 - Made Our Services slightly smaller in IBM Plex Sans and underlined the centered top company name
+- Added Boarding by Carter page with its photo, bottom contact details, and homepage link
+- Added Coaching by Carter page with its photo, bottom contact details, and homepage link
 
 ## Open
 - Swap in better photos when Mark sends them
