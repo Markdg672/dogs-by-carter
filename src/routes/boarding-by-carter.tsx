@@ -30,7 +30,7 @@ function BoardingPage() {
         <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Boarding by Carter</h1>
         <p className="mx-auto mt-6 max-w-3xl text-center text-2xl font-medium">A safe, structured, and comfortable alternative to traditional kennel boarding.</p>
         <div className="mt-12 grid justify-items-center">
-          <img src={boardingImg.url ?? boardingImg} alt="Dog boarding at Carter's home" className="max-h-[620px] w-full max-w-2xl object-contain" />
+          <img src={boardingImg} alt="Dog boarding at Carter's home" className="max-h-[620px] w-full max-w-2xl object-contain" />
         </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 text-xl leading-relaxed md:text-2xl">
           <p>Your dog stays in my home on a fully fenced property—not in a large facility—allowing them to relax in a more natural, low-stress environment. Dogs are treated like part of the family while maintaining clear structure and supervision.</p>

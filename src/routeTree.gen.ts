@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BoardingByCarterRouteImport } from './routes/boarding-by-carter'
 import { Route as TrainingByCarterRouteImport } from './routes/training-by-carter'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BoardingByCarterRoute = BoardingByCarterRouteImport.update({
+  id: '/boarding-by-carter',
+  path: '/boarding-by-carter',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TrainingByCarterRoute = TrainingByCarterRouteImport.update({
@@ -25,27 +31,31 @@ const TrainingByCarterRoute = TrainingByCarterRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/boarding-by-carter': typeof BoardingByCarterRoute
   '/training-by-carter': typeof TrainingByCarterRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/boarding-by-carter': typeof BoardingByCarterRoute
   '/training-by-carter': typeof TrainingByCarterRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/boarding-by-carter': typeof BoardingByCarterRoute
   '/training-by-carter': typeof TrainingByCarterRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/training-by-carter'
+  fullPaths: '/' | '/boarding-by-carter' | '/training-by-carter'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/training-by-carter'
-  id: '__root__' | '/' | '/training-by-carter'
+  to: '/' | '/boarding-by-carter' | '/training-by-carter'
+  id: '__root__' | '/' | '/boarding-by-carter' | '/training-by-carter'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BoardingByCarterRoute: typeof BoardingByCarterRoute
   TrainingByCarterRoute: typeof TrainingByCarterRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/boarding-by-carter': {
+      id: '/boarding-by-carter'
+      path: '/boarding-by-carter'
+      fullPath: '/boarding-by-carter'
+      preLoaderRoute: typeof BoardingByCarterRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/training-by-carter': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BoardingByCarterRoute: BoardingByCarterRoute,
   TrainingByCarterRoute: TrainingByCarterRoute,
 }
 export const routeTree = rootRouteImport
