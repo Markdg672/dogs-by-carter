@@ -62,28 +62,28 @@ function Index() {
     <main>
       <header className="bg-ink text-ink-foreground">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <span className="font-display text-xl">DOGS BY CARTER</span>
-          <a href={`tel:${PHONE}`} className="text-sm font-semibold text-primary">
+          <span className="font-display text-2xl">Dogs by Carter</span>
+          <a href={`tel:${PHONE}`} className="rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink">
             {PHONE}
           </a>
         </nav>
         <div className="mx-auto grid max-w-6xl gap-10 px-6 pb-20 pt-10 md:grid-cols-2 md:items-center">
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+            <p className="mb-4 text-base font-bold uppercase tracking-[0.18em] text-highlight">
               Training · Daycare · Boarding
             </p>
             <h1 className="text-5xl leading-[1.05] md:text-7xl">
               Real training.
               <br />
-              <span className="text-primary">Real results.</span>
+              <em className="text-highlight">Real results.</em>
             </h1>
-            <p className="mt-6 max-w-md text-lg opacity-80">
+            <p className="mt-6 max-w-md text-xl">
               Programs built around your dog and your lifestyle — from immersive board and train
               to private lessons.
             </p>
             <a
               href="#contact"
-              className="mt-8 inline-block rounded-md bg-primary px-7 py-4 font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+              className="mt-8 inline-block rounded-full bg-highlight px-8 py-4 text-lg font-bold text-ink transition-transform hover:-translate-y-0.5"
             >
               Find your program
             </a>
@@ -91,16 +91,16 @@ function Index() {
           <img
             src={coachingImg}
             alt="Carter training a dog in the park"
-            className="aspect-[4/3] w-full rounded-md object-cover"
+            className="aspect-[4/3] w-full rounded-3xl object-cover"
           />
         </div>
       </header>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="mb-12 text-4xl md:text-5xl">Services</h2>
+        <div className="mb-14 text-center"><p className="text-base font-bold uppercase tracking-[0.2em] text-accent">What we offer</p><h2 className="mt-3 text-5xl text-primary md:text-6xl">Our Services</h2><div className="mx-auto mt-5 h-1 w-20 rounded-full bg-highlight" /></div>
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((s) => (
-            <article key={s.name} className="overflow-hidden rounded-md border bg-card">
+            <article key={s.name} className="overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
               {s.img ? (
                 <img src={s.img} alt={s.name} loading="lazy" className="aspect-[4/3] w-full object-cover" />
               ) : (
@@ -112,12 +112,12 @@ function Index() {
                   </span>
                 </div>
               )}
-              <div className="p-7">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">{s.tag}</p>
-                <h3 className="mt-2 text-2xl">{s.name}</h3>
-                <ul className="mt-4 space-y-1 text-muted-foreground">
+              <div className="p-8">
+                <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">{s.tag}</p>
+                <h3 className="mt-2 text-3xl text-primary md:text-4xl">{s.name}</h3>
+                <ul className="mt-5 space-y-2 text-xl text-foreground">
                   {s.lines.map((l) => (
-                    <li key={l}>— {l}</li>
+                    <li key={l}>{l}</li>
                   ))}
                 </ul>
               </div>
@@ -130,12 +130,12 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2">
           <div>
             <h2 className="text-4xl md:text-5xl">Let's talk about your dog.</h2>
-            <p className="mt-5 text-lg opacity-80">
+            <p className="mt-5 text-lg">
               Call, text, or email to discuss your goals and find the program that best fits your
               lifestyle.
             </p>
             <div className="mt-8 space-y-2 text-xl font-semibold">
-              <a href={`tel:${PHONE}`} className="block text-primary">{PHONE}</a>
+              <a href={`tel:${PHONE}`} className="block text-highlight">{PHONE}</a>
               <a href={`mailto:${EMAIL}`} className="block">{EMAIL}</a>
             </div>
           </div>
@@ -150,20 +150,20 @@ function Index() {
             }}
           >
             <div className="grid grid-cols-2 gap-4">
-              <input name="first" required placeholder="First name" className="rounded-md border border-input bg-card px-4 py-3 text-card-foreground" />
-              <input name="last" placeholder="Last name" className="rounded-md border border-input bg-card px-4 py-3 text-card-foreground" />
+              <input name="first" required placeholder="First name" className="rounded-xl border border-input bg-card px-4 py-4 text-lg text-card-foreground" />
+              <input name="last" placeholder="Last name" className="rounded-xl border border-input bg-card px-4 py-4 text-lg text-card-foreground" />
             </div>
-            <input name="email" type="email" required placeholder="Email" className="w-full rounded-md border border-input bg-card px-4 py-3 text-card-foreground" />
-            <textarea name="msg" rows={5} required placeholder="Your name, dog's name, age, and breed" className="w-full rounded-md border border-input bg-card px-4 py-3 text-card-foreground" />
-            <button className="w-full rounded-md bg-primary px-6 py-4 font-semibold text-primary-foreground">
+            <input name="email" type="email" required placeholder="Email" className="w-full rounded-xl border border-input bg-card px-4 py-4 text-lg text-card-foreground" />
+            <textarea name="msg" rows={5} required placeholder="Your name, dog's name, age, and breed" className="w-full rounded-xl border border-input bg-card px-4 py-4 text-lg text-card-foreground" />
+            <button className="w-full rounded-full bg-highlight px-6 py-4 text-lg font-bold text-ink">
               Send
             </button>
-            {sent && <p className="text-primary">Thanks for reaching out!</p>}
+            {sent && <p className="text-highlight">Thanks for reaching out!</p>}
           </form>
         </div>
       </section>
 
-      <footer className="bg-ink px-6 pb-10 text-center text-sm text-ink-foreground opacity-70">
+      <footer className="bg-ink px-6 pb-10 text-center text-base text-ink-foreground ">
         © {new Date().getFullYear()} Dogs by Carter
       </footer>
     </main>
