@@ -62,7 +62,10 @@ function Index() {
     <main>
       <header className="bg-ink text-ink-foreground">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <span className="font-display text-2xl">Dogs by Carter</span>
+          <span className="font-display text-4xl font-semibold leading-none tracking-tight md:text-5xl">
+            Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
+            <span className="text-highlight">Carter</span>
+          </span>
           <a href={`tel:${PHONE}`} className="rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink">
             {PHONE}
           </a>
@@ -163,8 +166,12 @@ function Index() {
         </div>
       </section>
 
-      <footer className="bg-ink px-6 pb-10 text-center text-base text-ink-foreground ">
-        © {new Date().getFullYear()} Dogs by Carter
+      <footer className="bg-ink px-6 pb-12 pt-12 text-center text-ink-foreground">
+        <p className="font-display text-3xl font-semibold leading-none tracking-tight md:text-4xl">
+          Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
+          <span className="text-highlight">Carter</span>
+        </p>
+        <p className="mt-4 text-base">© {new Date().getFullYear()} Dogs by Carter · {PHONE}</p>
       </footer>
     </main>
   );
