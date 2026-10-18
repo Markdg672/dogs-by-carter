@@ -62,11 +62,11 @@ function Index() {
     <main>
       <header className="bg-ink text-ink-foreground">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <span className="font-display text-4xl font-semibold leading-none tracking-tight md:text-5xl">
+          <span className="font-display text-3xl font-semibold leading-none tracking-tight md:text-5xl">
             Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
             <span className="text-highlight">Carter</span>
           </span>
-          <a href={`tel:${PHONE}`} className="rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink">
+          <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink md:px-5 md:text-lg">
             {PHONE}
           </a>
         </nav>
