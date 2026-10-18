@@ -72,7 +72,7 @@ function Index() {
         </nav>
         <div className="mx-auto grid max-w-6xl gap-10 px-6 pb-20 pt-10 md:grid-cols-2 md:items-center">
           <div>
-            <p className="mb-4 text-base font-bold uppercase tracking-[0.18em] text-highlight">
+            <p className="mb-4 text-lg font-bold uppercase tracking-[0.18em] text-highlight">
               Training · Daycare · Boarding
             </p>
             <h1 className="text-5xl leading-[1.05] md:text-7xl">
@@ -107,7 +107,7 @@ function Index() {
               {s.img ? (
                 <img src={s.img} alt={s.name} loading="lazy" className="aspect-[4/3] w-full object-cover" />
               ) : (
-                <div className="flex aspect-[4/3] items-end bg-accent p-8 text-accent-foreground">
+                <div className="flex aspect-[4/3] items-end bg-ink p-8 text-ink-foreground">
                   <span className="font-display text-5xl leading-none">
                     Live it.
                     <br />
@@ -116,9 +116,9 @@ function Index() {
                 </div>
               )}
               <div className="p-8">
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">{s.tag}</p>
+                <p className="text-base font-bold uppercase tracking-[0.12em] text-accent">{s.tag}</p>
                 <h3 className="mt-2 text-3xl text-primary md:text-4xl">{s.name}</h3>
-                <ul className="mt-5 space-y-2 text-xl text-foreground">
+                <ul className="mt-5 space-y-2 text-2xl text-foreground">
                   {s.lines.map((l) => (
                     <li key={l}>{l}</li>
                   ))}
@@ -171,7 +171,7 @@ function Index() {
           Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
           <span className="text-highlight">Carter</span>
         </p>
-        <p className="mt-4 text-base">© {new Date().getFullYear()} Dogs by Carter · {PHONE}</p>
+        <p className="mt-4 text-lg">© {new Date().getFullYear()} Dogs by Carter · {PHONE}</p>
       </footer>
     </main>
   );

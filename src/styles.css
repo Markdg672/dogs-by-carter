@@ -71,4 +71,5 @@
     line-height: 1.7;
   }
   h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.01em; font-weight: 600; }
+  ::placeholder { color: color-mix(in oklab, var(--muted-foreground) 78%, transparent); opacity: 1; }
 }
