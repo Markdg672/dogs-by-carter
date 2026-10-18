@@ -17,3 +17,4 @@
 
 ## Open
 - Swap in better photos when Mark sends them
+- Add videos to the site when Mark sends them (either uploaded clips or links from YouTube/Vimeo)
