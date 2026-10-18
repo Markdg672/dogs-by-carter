@@ -29,8 +29,8 @@ const PHONE = "(949) 304-9888";
 
 const services = [
   {
-    name: "Training by Carter",
-    tag: "Board and Train",
+    name: "Board and Train",
+    tag: "Training by Carter",
     lines: ["Real training", "Real results", "Immersive lifestyle training"],
     img: null as string | null,
   },
@@ -122,7 +122,7 @@ function Index() {
                   ))}
                 </ul>
                 {s.name === "Play and Train" && <Link to="/play-and-train" className="mt-6 inline-block text-xl font-semibold text-primary underline underline-offset-4">Explore Play & Train →</Link>}
-                {s.name === "Training by Carter" && <Link to="/training-by-carter" className="mt-6 inline-block text-xl font-semibold text-primary underline underline-offset-4">Explore Training by Carter →</Link>}
+                {s.name === "Board and Train" && <Link to="/training-by-carter" className="mt-6 inline-block text-xl font-semibold text-primary underline underline-offset-4">Explore Training by Carter →</Link>}
                 {s.name === "Boarding by Carter" && <Link to="/boarding-by-carter" className="mt-6 inline-block text-xl font-semibold text-primary underline underline-offset-4">Explore Boarding by Carter →</Link>}
                 {s.name === "Coaching by Carter" && <Link to="/coaching-by-carter" className="mt-6 inline-block text-xl font-semibold text-primary underline underline-offset-4">Explore Coaching by Carter →</Link>}
               </div>
