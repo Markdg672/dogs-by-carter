@@ -61,12 +61,13 @@ function Index() {
   return (
     <main>
       <header className="bg-ink text-ink-foreground">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-          <span className="font-display text-3xl font-semibold leading-none tracking-tight md:text-5xl">
+        <nav className="mx-auto grid max-w-6xl items-center gap-4 px-6 py-5 md:grid-cols-3">
+          <span aria-hidden className="hidden md:block" />
+          <span className="text-center font-display text-2xl font-semibold leading-none tracking-tight md:text-[2.6rem]">
             Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
             <span className="text-highlight">Carter</span>
           </span>
-          <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink md:px-5 md:text-lg">
+          <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink justify-self-center md:justify-self-end md:px-5 md:text-lg">
             {PHONE}
           </a>
         </nav>
