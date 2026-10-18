@@ -7,5 +7,7 @@
 - Services headings centred and prominent
 - "Dogs by Carter" wordmark larger and more memorable (header + footer)
 
+- Removed the "What we offer" label above Our Services
+
 ## Open
 - Swap in better photos when Mark sends them
