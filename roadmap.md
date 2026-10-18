@@ -8,8 +8,8 @@
 - "Dogs by Carter" wordmark larger and more memorable (header + footer)
 
 - Removed the "What we offer" label above Our Services
+- Added Training by Carter page with its original photos, bottom contact details, and homepage links
+- Made Our Services slightly smaller in IBM Plex Sans and underlined the centered top company name
 
 ## Open
-- Add Training by Carter page with its original photos, bottom contact details, and a clickable homepage link
-- Make Our Services slightly smaller in a different font and underline the top company name
 - Swap in better photos when Mark sends them
