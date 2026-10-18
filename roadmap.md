@@ -13,6 +13,7 @@
 - Added Boarding by Carter page with its photo, bottom contact details, and homepage link
 - Added Coaching by Carter page with its photo, bottom contact details, and homepage link
 - Added Play & Train page with its three photos, bottom contact details, and homepage link
+- Swapped the first service card labels: heading now "Board and Train" with "Training by Carter" above it
 
 ## Open
 - Swap in better photos when Mark sends them
