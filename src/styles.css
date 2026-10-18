@@ -56,9 +56,9 @@
   --border: oklch(0.22 0.03 20 / 15%);
   --input: oklch(0.22 0.03 20 / 35%);
   --ring: oklch(0.52 0.13 15);
-  --ink: oklch(0.3 0.06 15);
+  --ink: oklch(0.38 0.055 190);
   --ink-foreground: oklch(0.99 0.005 50);
-  --highlight: oklch(0.86 0.08 40);
+  --highlight: oklch(0.88 0.06 20);
 }
 
 @layer base {
