@@ -10,4 +10,6 @@
 - Removed the "What we offer" label above Our Services
 
 ## Open
+- Add Training by Carter page with its original photos, bottom contact details, and a clickable homepage link
+- Make Our Services slightly smaller in a different font and underline the top company name
 - Swap in better photos when Mark sends them
