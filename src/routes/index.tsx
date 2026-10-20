@@ -27,6 +27,9 @@ export const Route = createFileRoute("/")({
 
 const PHONE = "(949) 304-9888";
 
+const CTA =
+  "mt-8 inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg ring-1 ring-primary/25 transition-all hover:-translate-y-0.5 hover:bg-ink hover:shadow-xl";
+
 const services = [
   {
     name: "Board and Train",
@@ -116,15 +119,31 @@ function Index() {
               <div className="p-8">
                 <p className="text-base font-bold uppercase tracking-[0.12em] text-accent">{s.tag}</p>
                 <h3 className="mt-2 text-3xl text-primary md:text-4xl">{s.name}</h3>
-                <ul className="mt-5 space-y-2 text-2xl font-medium text-foreground">
+                <ul className="mt-5 space-y-2 font-body text-2xl font-medium leading-relaxed text-foreground md:text-[1.65rem]">
                   {s.lines.map((l) => (
                     <li key={l}>{l}</li>
                   ))}
                 </ul>
-                {s.name === "Play and Train" && <Link to="/play-and-train" className="mt-6 inline-block text-xl font-semibold text-primary underline underline-offset-4">Explore Play & Train →</Link>}
-                {s.name === "Board and Train" && <Link to="/training-by-carter" className="mt-6 inline-block text-xl font-semibold text-primary underline underline-offset-4">Explore Training by Carter →</Link>}
-                {s.name === "Boarding by Carter" && <Link to="/boarding-by-carter" className="mt-6 inline-block text-xl font-semibold text-primary underline underline-offset-4">Explore Boarding by Carter →</Link>}
-                {s.name === "Coaching by Carter" && <Link to="/coaching-by-carter" className="mt-6 inline-block text-xl font-semibold text-primary underline underline-offset-4">Explore Coaching by Carter →</Link>}
+                {s.name === "Play and Train" && (
+                  <Link to="/play-and-train" className={CTA}>
+                    Explore Play &amp; Train <span aria-hidden="true">→</span>
+                  </Link>
+                )}
+                {s.name === "Board and Train" && (
+                  <Link to="/training-by-carter" className={CTA}>
+                    Explore Training by Carter <span aria-hidden="true">→</span>
+                  </Link>
+                )}
+                {s.name === "Boarding by Carter" && (
+                  <Link to="/boarding-by-carter" className={CTA}>
+                    Explore Boarding by Carter <span aria-hidden="true">→</span>
+                  </Link>
+                )}
+                {s.name === "Coaching by Carter" && (
+                  <Link to="/coaching-by-carter" className={CTA}>
+                    Explore Coaching by Carter <span aria-hidden="true">→</span>
+                  </Link>
+                )}
               </div>
             </article>
           ))}
