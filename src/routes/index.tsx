@@ -27,6 +27,9 @@ export const Route = createFileRoute("/")({
 
 const PHONE = "(949) 304-9888";
 
+const CTA =
+  "mt-8 inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg ring-1 ring-primary/25 transition-all hover:-translate-y-0.5 hover:bg-ink hover:shadow-xl";
+
 const services = [
   {
     name: "Board and Train",
