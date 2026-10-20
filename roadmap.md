@@ -16,5 +16,6 @@
 - Swapped the first service card labels: heading now "Board and Train" with "Training by Carter" above it
 
 ## Open
+- Change the font of the service card description text to something more appealing
 - Swap in better photos when Mark sends them
 - Add videos to the site when Mark sends them (either uploaded clips or links from YouTube/Vimeo)
