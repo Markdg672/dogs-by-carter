@@ -36,11 +36,11 @@ function CoachingPage() {
       </header>
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-12 md:pt-16">
         <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Coaching by Carter</h1>
-        <p className="mx-auto mt-4 max-w-3xl text-center text-2xl font-medium">Private Training &amp; Owner Coaching</p>
+        <p className="mx-auto mt-4 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">Private Training &amp; Owner Coaching</p>
         <div className="mt-12 grid justify-items-center">
           <img src={coachingImg} alt="Carter coaching a dog and owner in the park" className="max-h-[620px] w-full max-w-2xl object-contain" />
         </div>
-        <div className="mx-auto mt-12 max-w-3xl space-y-7 text-xl leading-relaxed md:text-2xl">
+        <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
           <p>Coaching by Carter is designed for owners who want to be directly involved in their dog’s training and learn how to create lasting results themselves.</p>
           <p>Having worked with many coaches and teachers throughout my life—from athletics to music and public speaking—I’ve experienced firsthand how much the quality of coaching can shape results. That perspective directly influences how I work with my clients today.</p>
           <p>Rather than simply training your dog for you, I coach you on how to communicate clearly, handle your dog effectively, and build reliable behavior in real-life situations. The focus is on giving you the skills and understanding needed to confidently lead your dog day-to-day.</p>

@@ -29,12 +29,12 @@ function TrainingPage() {
       </header>
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-12 md:pt-16">
         <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Training by Carter</h1>
-        <p className="mx-auto mt-6 max-w-3xl text-center text-2xl font-medium">Training by Carter is a highly personalized, immersive program designed to create real, lasting results.</p>
+        <p className="mx-auto mt-6 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">Training by Carter is a highly personalized, immersive program designed to create real, lasting results.</p>
         <div className="mt-12 grid items-start gap-8 md:grid-cols-2">
           <img src={trainingOne.url} alt="Training by Carter program photo" className="max-h-[620px] w-full object-contain" />
           <img src={trainingTwo.url} alt="Dogs in Carter’s training program" className="max-h-[620px] w-full object-contain" />
         </div>
-        <div className="mx-auto mt-12 max-w-3xl space-y-7 text-xl leading-relaxed md:text-2xl">
+        <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
           <p>Your dog lives in my home—not a kennel—becoming part of a structured daily routine alongside me and my dogs. Training takes place both at home and in real-world environments like cafés, restaurants, parks, and hiking trails—so your dog learns to perform where it actually matters.</p>
           <p>Each dog receives a customized training plan based on their behavior and your goals.</p>
           <p>To maintain a high level of care and quality, I only take a limited number of dogs at a time.</p>
