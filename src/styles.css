@@ -35,6 +35,7 @@
   --color-ink: var(--ink);
   --color-ink-foreground: var(--ink-foreground);
   --color-highlight: var(--highlight);
+  --color-gold: var(--gold);
 }
 
 :root {
@@ -61,6 +62,7 @@
   --ink: oklch(0.34 0.07 200);
   --ink-foreground: oklch(0.99 0.005 85);
   --highlight: oklch(0.89 0.07 90);
+  --gold: oklch(0.58 0.13 85);
 }
 
 @layer base {
