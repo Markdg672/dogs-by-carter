@@ -23,4 +23,5 @@
 ## Open
 
 - Swap in better photos when Mark sends them
+- Put Mark's new corgi patio photo into the Board and Train card so he can compare it against the boarding one and pick the better
 - Add videos to the site when Mark sends them (either uploaded clips or links from YouTube/Vimeo)

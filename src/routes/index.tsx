@@ -3,6 +3,7 @@ import { SiteContact } from "@/components/site-contact";
 import playImg from "@/assets/play.jpg";
 import coachingImg from "@/assets/coaching.jpg";
 import boardingAsset from "@/assets/boarding.jpg.asset.json";
+import boardTrainAsset from "@/assets/board-train.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,7 +36,7 @@ const services = [
     name: "Board and Train",
     tag: "Training by Carter",
     lines: ["Real training", "Real results", "Immersive lifestyle training"],
-    img: null as string | null,
+    img: boardTrainAsset.url,
   },
   {
     name: "Play and Train",
