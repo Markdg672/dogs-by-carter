@@ -17,6 +17,8 @@
 - Made the "Explore ..." card links into bold filled buttons so they stand out
 - Changed the service card description text to a warm serif (Lora)
 - Set the service page description text (training, boarding, coaching, play & train) in Lora too, so it reads soft instead of blocky
+- Made the "Training by Carter" page heading gold
+- Made the top-left "← Home" link slightly bigger on all service pages
 
 ## Open
 
