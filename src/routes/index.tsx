@@ -62,7 +62,7 @@ function Index() {
     <main>
       <header className="bg-ink text-ink-foreground">
         <nav className="mx-auto grid max-w-6xl items-center gap-4 px-6 py-5 md:grid-cols-3">
-          <Link to="/training-by-carter" className="order-3 justify-self-center text-lg font-semibold underline underline-offset-4 md:order-none md:justify-self-start">Training by Carter</Link>
+          <Link to="/training-by-carter" className="order-3 justify-self-center whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-base font-bold text-ink shadow-md ring-1 ring-ink/10 transition-all hover:-translate-y-0.5 hover:shadow-lg md:order-none md:justify-self-start md:px-6 md:text-lg">Training by Carter</Link>
           <span className="text-center font-display text-2xl font-semibold leading-none underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">
             Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
             <span className="text-highlight">Carter</span>
