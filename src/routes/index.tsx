@@ -101,7 +101,7 @@ function Index() {
       </header>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="mb-16 text-center"><h2 className="font-sans text-5xl font-semibold leading-tight tracking-normal text-primary md:text-7xl">Our Services</h2><div className="mx-auto mt-6 h-2 w-32 rounded-full bg-accent" /></div>
+        <div className="mb-16 text-center"><h2 className="font-services text-5xl font-semibold italic leading-tight tracking-normal text-primary md:text-7xl">Our Services</h2><div className="mx-auto mt-6 h-2 w-32 rounded-full bg-accent" /></div>
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((s) => (
             <article key={s.name} className="overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
