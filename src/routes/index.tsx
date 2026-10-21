@@ -2,7 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import playImg from "@/assets/play.jpg";
 import coachingImg from "@/assets/coaching.jpg";
-import boardingImg from "@/assets/boarding.jpg";
+import boardingAsset from "@/assets/boarding.jpg.asset.json";
+import boardTrainAsset from "@/assets/board-train.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,7 +36,7 @@ const services = [
     name: "Board and Train",
     tag: "Training by Carter",
     lines: ["Real training", "Real results", "Immersive lifestyle training"],
-    img: null as string | null,
+    img: boardTrainAsset.url,
   },
   {
     name: "Play and Train",
@@ -53,7 +54,7 @@ const services = [
     name: "Boarding by Carter",
     tag: "Overnight / Day Boarding",
     lines: ["Your dog in my home", "Play · Exercise · Relax"],
-    img: boardingImg,
+    img: boardingAsset.url,
   },
 ];
 
@@ -106,7 +107,7 @@ function Index() {
           {services.map((s) => (
             <article key={s.name} className="overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
               {s.img ? (
-                <img src={s.img} alt={s.name} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                <img src={s.img} alt={s.name} loading="lazy" className={"aspect-[4/3] w-full object-cover " + (s.name === "Board and Train" ? "object-bottom" : "object-center")} />
               ) : (
                 <div className="flex aspect-[4/3] items-end bg-ink p-8 text-ink-foreground">
                   <span className="font-display text-5xl leading-none">
