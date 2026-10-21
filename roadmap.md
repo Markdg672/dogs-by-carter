@@ -19,6 +19,7 @@
 - Set the service page description text (training, boarding, coaching, play & train) in Lora too, so it reads soft instead of blocky
 - Made the "Training by Carter" page heading gold
 - Made the top-left "← Home" link slightly bigger on all service pages
+- Added subtle gold diamond bullet markers to the service card descriptions
 
 ## Open
 
