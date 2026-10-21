@@ -120,9 +120,12 @@ function Index() {
               <div className="p-8">
                 <p className="text-base font-bold uppercase tracking-[0.12em] text-accent">{s.tag}</p>
                 <h3 className="mt-2 text-3xl text-primary md:text-4xl">{s.name}</h3>
-                <ul className="mt-5 space-y-2 font-body text-2xl font-medium leading-relaxed text-foreground md:text-[1.65rem]">
+                <ul className="mt-5 grid grid-cols-[auto_auto] justify-center gap-x-3 gap-y-3 text-left font-body text-2xl font-medium leading-relaxed text-foreground md:text-[1.65rem]">
                   {s.lines.map((l) => (
-                    <li key={l}>{l}</li>
+                    <li key={l} className="contents">
+                      <span aria-hidden="true" className="self-center size-1.5 shrink-0 rotate-45 rounded-[2px] bg-gold/60" />
+                      <span>{l}</span>
+                    </li>
                   ))}
                 </ul>
                 {s.name === "Play and Train" && (
