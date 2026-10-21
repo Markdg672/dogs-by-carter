@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import playImg from "@/assets/play.jpg";
 import coachingImg from "@/assets/coaching.jpg";
-import boardingImg from "@/assets/boarding.jpg";
+import boardingAsset from "@/assets/boarding.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -53,7 +53,7 @@ const services = [
     name: "Boarding by Carter",
     tag: "Overnight / Day Boarding",
     lines: ["Your dog in my home", "Play · Exercise · Relax"],
-    img: boardingImg,
+    img: boardingAsset.url,
   },
 ];
 
