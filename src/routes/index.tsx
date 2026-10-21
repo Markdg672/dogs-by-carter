@@ -107,7 +107,7 @@ function Index() {
           {services.map((s) => (
             <article key={s.name} className="overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
               {s.img ? (
-                <img src={s.img} alt={s.name} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                <img src={s.img} alt={s.name} loading="lazy" className={"aspect-[4/3] w-full object-cover " + (s.name === "Board and Train" ? "object-bottom" : "object-center")} />
               ) : (
                 <div className="flex aspect-[4/3] items-end bg-ink p-8 text-ink-foreground">
                   <span className="font-display text-5xl leading-none">
