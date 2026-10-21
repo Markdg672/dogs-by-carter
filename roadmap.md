@@ -16,6 +16,7 @@
 - Swapped the first service card labels: heading now "Board and Train" with "Training by Carter" above it
 - Made the "Explore ..." card links into bold filled buttons so they stand out
 - Changed the service card description text to a warm serif (Lora)
+- Set the service page description text (training, boarding, coaching, play & train) in Lora too, so it reads soft instead of blocky
 
 ## Open
 
