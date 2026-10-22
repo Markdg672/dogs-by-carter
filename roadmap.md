@@ -28,5 +28,6 @@
 
 - Both new corgi photos are in: the butterfly-thermometer shot is on the "Board and Train" card, the other on "Boarding by Carter". Mark to say which is the better one.
 - Put Mark's newest photo (IMG_7976) in the "Board and Train" card, replacing the current picture
+- Put the original top-of-page photo back in the big hero image at the top of the homepage
 - Still to swap when Mark sends them: the play photo, and the two on the Training by Carter page
 - Add videos to the site when Mark sends them (either uploaded clips or links from YouTube/Vimeo)
