@@ -47,10 +47,10 @@ function PlayTrainPage() {
           <p>Every dog is carefully matched based on temperament, energy level, and play style to create a safe, enjoyable, and productive environment.</p>
         </div>
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
-          <img src={playTrain1} alt="Dogs playing together in a play and train group" className="aspect-square w-full rounded-3xl object-cover object-center" />
-          <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="aspect-square w-full rounded-3xl object-cover object-center" />
-          <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="aspect-square w-full rounded-3xl object-cover object-center" />
-          <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="aspect-square w-full rounded-3xl object-cover object-bottom" />
+          <img src={playTrain1} alt="Dogs playing together in a play and train group" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
+          <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
+          <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
+          <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="aspect-[4/5] w-full rounded-3xl object-cover object-bottom" />
         </div>
       </section>
       <SiteContact />
