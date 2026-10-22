@@ -39,16 +39,16 @@ function PlayTrainPage() {
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-12 md:pt-16">
         <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Play & Train</h1>
         <p className="mx-auto mt-4 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">A Hybrid Between Daycare and Training</p>
-        <div className="mt-12 grid justify-items-center gap-6 md:grid-cols-2">
-          <img src={playTrain1} alt="Dogs playing together in a play and train group" className="w-full max-w-2xl rounded-3xl object-cover" />
-          <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="w-full max-w-2xl rounded-3xl object-cover" />
-          <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="w-full max-w-2xl rounded-3xl object-cover md:col-span-2" />
-        </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
           <p>Play & Train is a unique daytime program that combines the fun and socialization of daycare with the structure and purpose of professional training.</p>
           <p>Unlike a traditional daycare where dogs spend the entire day in one location, Play & Train exposes your dog to a variety of real-world environments. Depending on the day, your dog may enjoy outings to parks, hiking trails, and other dog-friendly locations while practicing good manners, social skills, and engagement in new settings.</p>
           <p>Structured play groups provide opportunities for healthy socialization, while training is woven naturally throughout the day to reinforce calm behavior, confidence, and responsiveness. This combination of exercise, social interaction, and real-world experiences helps dogs become more adaptable and well-rounded companions.</p>
           <p>Every dog is carefully matched based on temperament, energy level, and play style to create a safe, enjoyable, and productive environment.</p>
+        </div>
+        <div className="mt-14 grid justify-items-center gap-6 md:grid-cols-2">
+          <img src={playTrain1} alt="Dogs playing together in a play and train group" className="w-full max-w-2xl rounded-3xl object-cover" />
+          <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="w-full max-w-2xl rounded-3xl object-cover" />
+          <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="w-full max-w-2xl rounded-3xl object-cover md:col-span-2" />
         </div>
       </section>
       <SiteContact />
