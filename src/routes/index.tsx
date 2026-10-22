@@ -120,7 +120,7 @@ function Index() {
               <div className="p-8">
                 <h3 className="text-3xl text-primary md:text-4xl">{s.name}</h3>
                 <p className="mt-3 text-base font-bold uppercase tracking-[0.18em] text-accent">{s.tag}</p>
-                <div className="mx-auto mt-6 h-px w-16 bg-accent/25" />
+                <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-accent/30" />
                 <ul className="mt-6 grid grid-cols-[auto_auto] justify-center gap-x-3 gap-y-3 text-left font-body text-2xl font-medium leading-relaxed text-foreground md:text-[1.65rem]">
                   {s.lines.map((l) => (
                     <li key={l} className="contents">
