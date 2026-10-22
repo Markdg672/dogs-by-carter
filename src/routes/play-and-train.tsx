@@ -3,6 +3,7 @@ import { SiteContact } from "@/components/site-contact";
 import playTrain1 from "@/assets/play-train-1.jpg";
 import playTrain2 from "@/assets/play-train-2.jpg";
 import playTrain3 from "@/assets/play-train-3.jpg";
+import playTrain4Asset from "@/assets/play-train-4.jpg.asset.json";
 
 export const Route = createFileRoute("/play-and-train")({
   head: () => ({
@@ -45,10 +46,11 @@ function PlayTrainPage() {
           <p>Structured play groups provide opportunities for healthy socialization, while training is woven naturally throughout the day to reinforce calm behavior, confidence, and responsiveness. This combination of exercise, social interaction, and real-world experiences helps dogs become more adaptable and well-rounded companions.</p>
           <p>Every dog is carefully matched based on temperament, energy level, and play style to create a safe, enjoyable, and productive environment.</p>
         </div>
-        <div className="mt-14 grid justify-items-center gap-6 md:grid-cols-2">
-          <img src={playTrain1} alt="Dogs playing together in a play and train group" className="w-full max-w-2xl rounded-3xl object-cover" />
-          <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="w-full max-w-2xl rounded-3xl object-cover" />
-          <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="w-full max-w-2xl rounded-3xl object-cover md:col-span-2" />
+        <div className="mt-14 grid gap-6 sm:grid-cols-2">
+          <img src={playTrain1} alt="Dogs playing together in a play and train group" className="aspect-square w-full rounded-3xl object-cover object-center" />
+          <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="aspect-square w-full rounded-3xl object-cover object-center" />
+          <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="aspect-square w-full rounded-3xl object-cover object-center" />
+          <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="aspect-square w-full rounded-3xl object-cover object-bottom" />
         </div>
       </section>
       <SiteContact />
