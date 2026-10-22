@@ -96,7 +96,7 @@ function Index() {
           <img
             src={coachingAsset.url}
             alt="A focused German Shepherd holding a ball in the yard"
-            className="aspect-[4/3] w-full rounded-3xl object-cover"
+            className="aspect-[4/5] w-full rounded-3xl object-cover"
           />
         </div>
       </header>
