@@ -21,6 +21,7 @@
 - Made the top-left "← Home" link slightly bigger on all service pages
 - Added subtle gold diamond bullet markers to the service card descriptions
 - Flipped the card labels so the small gold line sits under the big teal heading
+- Made the "Training by Carter" and "Find your program" bubbles all caps so they pop
 
 ## Open
 

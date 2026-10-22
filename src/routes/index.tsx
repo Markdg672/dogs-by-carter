@@ -63,7 +63,7 @@ function Index() {
     <main>
       <header className="bg-ink text-ink-foreground">
         <nav className="mx-auto grid max-w-6xl items-center gap-4 px-6 py-5 md:grid-cols-3">
-          <Link to="/training-by-carter" className="order-3 justify-self-center whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-base font-bold text-ink shadow-md ring-1 ring-ink/10 transition-all hover:-translate-y-0.5 hover:shadow-lg md:order-none md:justify-self-start md:px-6 md:text-lg">Training by Carter</Link>
+          <Link to="/training-by-carter" className="order-3 justify-self-center whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-base font-bold uppercase tracking-[0.08em] text-ink shadow-md ring-1 ring-ink/10 transition-all hover:-translate-y-0.5 hover:shadow-lg md:order-none md:justify-self-start md:px-6 md:text-lg">Training by Carter</Link>
           <span className="text-center font-display text-2xl font-semibold leading-none underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">
             Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
             <span className="text-highlight">Carter</span>
@@ -88,7 +88,7 @@ function Index() {
             </p>
             <a
               href="#contact"
-              className="mt-8 inline-block rounded-full bg-highlight px-8 py-4 text-lg font-bold text-ink transition-transform hover:-translate-y-0.5"
+              className="mt-8 inline-block rounded-full bg-highlight px-8 py-4 text-lg font-bold uppercase tracking-[0.08em] text-ink transition-transform hover:-translate-y-0.5"
             >
               Find your program
             </a>
@@ -105,7 +105,7 @@ function Index() {
         <div className="mb-16 text-center"><h2 className="font-services text-5xl font-semibold italic leading-tight tracking-normal text-primary md:text-7xl">Our Services</h2><div className="mx-auto mt-6 h-2 w-32 rounded-full bg-accent" /></div>
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((s) => (
-            <article key={s.name} className="overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
+            <article key={s.name} className="flex flex-col overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
               {s.img ? (
                 <img src={s.img} alt={s.name} loading="lazy" className={"aspect-[4/3] w-full object-cover " + (s.name === "Board and Train" ? "object-bottom" : "object-center")} />
               ) : (
@@ -117,10 +117,11 @@ function Index() {
                   </span>
                 </div>
               )}
-              <div className="p-8">
-                <p className="text-base font-bold uppercase tracking-[0.12em] text-accent">{s.tag}</p>
-                <h3 className="mt-2 text-3xl text-primary md:text-4xl">{s.name}</h3>
-                <ul className="mt-5 grid grid-cols-[auto_auto] justify-center gap-x-3 gap-y-3 text-left font-body text-2xl font-medium leading-relaxed text-foreground md:text-[1.65rem]">
+              <div className="flex flex-1 flex-col p-8">
+                <h3 className="text-3xl text-primary md:text-4xl">{s.name}</h3>
+                <p className="mt-3 text-base font-bold uppercase tracking-[0.18em] text-accent">{s.tag}</p>
+                <div className="mx-auto mt-5 h-1.5 w-16 rounded-full bg-accent/40" />
+                <ul className="mt-6 grid flex-1 content-start grid-cols-[auto_auto] justify-center gap-x-3 gap-y-3 text-left font-body text-2xl font-medium leading-relaxed text-foreground md:text-[1.65rem]">
                   {s.lines.map((l) => (
                     <li key={l} className="contents">
                       <span aria-hidden="true" className="self-center size-1.5 shrink-0 rotate-45 rounded-[2px] bg-gold/60" />
