@@ -1,4 +1,5 @@
 import { useState } from "react";
+import contactAsset from "@/assets/contact.jpg.asset.json";
 
 const PHONE = "(949) 304-9888";
 const EMAIL = "dogsbycarter@gmail.com";
@@ -19,6 +20,12 @@ export function SiteContact() {
               <a href={`tel:${PHONE}`} className="block text-highlight">{PHONE}</a>
               <a href={`mailto:${EMAIL}`} className="block">{EMAIL}</a>
             </div>
+            <img
+              src={contactAsset.url}
+              alt="A dog leaping joyfully across the turf while another dog plays behind"
+              loading="lazy"
+              className="mt-10 aspect-[4/3] w-full rounded-3xl object-cover object-center"
+            />
           </div>
           <form
             className="space-y-4"
