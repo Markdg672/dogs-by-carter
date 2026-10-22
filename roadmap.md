@@ -25,5 +25,6 @@
 ## Open
 
 - Both new corgi photos are in: the butterfly-thermometer shot is on the "Board and Train" card, the other on "Boarding by Carter". Mark to say which is the better one.
+- Make the "Training by Carter" and "Find your program" bubbles uppercase/bolder so they pop
 - Still to swap when Mark sends them: the play and coaching photos, and the two on the Training by Carter page
 - Add videos to the site when Mark sends them (either uploaded clips or links from YouTube/Vimeo)
