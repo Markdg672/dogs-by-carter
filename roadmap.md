@@ -22,9 +22,10 @@
 - Added subtle gold diamond bullet markers to the service card descriptions
 - Flipped the card labels so the small gold line sits under the big teal heading
 - Made the "Training by Carter" and "Find your program" bubbles all caps so they pop
+- Swapped in Mark's new coaching photo (German Shepherd with ball) and put his new action photo at the bottom of the page
 
 ## Open
 
 - Both new corgi photos are in: the butterfly-thermometer shot is on the "Board and Train" card, the other on "Boarding by Carter". Mark to say which is the better one.
-- Still to swap when Mark sends them: the play and coaching photos, and the two on the Training by Carter page
+- Still to swap when Mark sends them: the play photo, and the two on the Training by Carter page
 - Add videos to the site when Mark sends them (either uploaded clips or links from YouTube/Vimeo)

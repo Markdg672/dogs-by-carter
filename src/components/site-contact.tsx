@@ -24,7 +24,7 @@ export function SiteContact() {
               src={contactAsset.url}
               alt="A dog leaping joyfully across the turf while another dog plays behind"
               loading="lazy"
-              className="mt-10 aspect-[4/3] w-full rounded-3xl object-cover object-center"
+              className="mt-10 aspect-square w-full rounded-3xl object-cover object-center"
             />
           </div>
           <form
