@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import playImg from "@/assets/play.jpg";
-import coachingImg from "@/assets/coaching.jpg";
+import coachingAsset from "@/assets/coaching.jpg.asset.json";
 import boardingAsset from "@/assets/boarding.jpg.asset.json";
 import boardTrainAsset from "@/assets/board-train.jpg.asset.json";
+import heroOriginalAsset from "@/assets/hero-original.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -48,7 +49,7 @@ const services = [
     name: "Coaching by Carter",
     tag: "Private Lessons",
     lines: ["Custom coaching", "Designed for your goals", "Simple, clear, effective, and fun"],
-    img: coachingImg,
+    img: coachingAsset.url,
   },
   {
     name: "Boarding by Carter",
@@ -94,7 +95,7 @@ function Index() {
             </a>
           </div>
           <img
-            src={coachingImg}
+            src={heroOriginalAsset.url}
             alt="Carter training a dog in the park"
             className="aspect-[4/3] w-full rounded-3xl object-cover"
           />

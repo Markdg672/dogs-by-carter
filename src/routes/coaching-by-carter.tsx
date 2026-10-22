@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
-import coachingImg from "@/assets/coaching.jpg";
+import coachingAsset from "@/assets/coaching.jpg.asset.json";
 
 export const Route = createFileRoute("/coaching-by-carter")({
   head: () => ({
@@ -38,7 +38,7 @@ function CoachingPage() {
         <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Coaching by Carter</h1>
         <p className="mx-auto mt-4 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">Private Training &amp; Owner Coaching</p>
         <div className="mt-12 grid justify-items-center">
-          <img src={coachingImg} alt="Carter coaching a dog and owner in the park" className="max-h-[620px] w-full max-w-2xl object-contain" />
+          <img src={coachingAsset.url} alt="A focused German Shepherd holding a ball in the yard" className="max-h-[620px] w-full max-w-2xl object-contain" />
         </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
           <p>Coaching by Carter is designed for owners who want to be directly involved in their dog’s training and learn how to create lasting results themselves.</p>
