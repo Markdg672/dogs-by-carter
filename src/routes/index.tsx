@@ -4,6 +4,7 @@ import playImg from "@/assets/play.jpg";
 import coachingAsset from "@/assets/coaching.jpg.asset.json";
 import boardingAsset from "@/assets/boarding.jpg.asset.json";
 import boardTrainAsset from "@/assets/board-train.jpg.asset.json";
+import heroOriginalAsset from "@/assets/hero-original.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -94,9 +95,9 @@ function Index() {
             </a>
           </div>
           <img
-            src={coachingAsset.url}
-            alt="A focused German Shepherd holding a ball in the yard"
-            className="aspect-[4/5] w-full rounded-3xl object-cover"
+            src={heroOriginalAsset.url}
+            alt="Carter training a dog in the park"
+            className="aspect-[4/3] w-full rounded-3xl object-cover"
           />
         </div>
       </header>
