@@ -50,7 +50,7 @@ function PlayTrainPage() {
           <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
           <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
           <div className="aspect-[4/3] w-full overflow-hidden rounded-3xl">
-            <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="h-full w-full object-cover object-bottom" style={{ transform: "scale(1.3)", transformOrigin: "72% 100%" }} />
+            <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="h-full w-full object-cover object-bottom" style={{ transform: "scale(1.2)", transformOrigin: "72% 100%" }} />
           </div>
         </div>
       </section>
