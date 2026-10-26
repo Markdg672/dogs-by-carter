@@ -40,16 +40,16 @@ function PlayTrainPage() {
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-8">
         <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Play & Train</h1>
         <p className="mx-auto mt-4 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">A Hybrid Between Daycare and Training</p>
-        <div className="mx-auto mt-8 max-w-3xl space-y-5 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
+        <div className="mx-auto mt-6 max-w-3xl space-y-4 font-body text-lg leading-relaxed tracking-normal text-foreground/95 md:text-xl">
           <p>Play & Train combines the fun and socialization of daycare with the structure and purpose of professional training.</p>
           <p>Unlike traditional daycare, your dog gets out and about — enjoying outings to parks, hiking trails, and other dog-friendly spots while practicing good manners and social skills in new settings.</p>
           <p>Structured play groups build healthy socialization, and training is woven naturally through the day to reinforce calm behavior, confidence, and responsiveness. Every dog is matched by temperament, energy level, and play style for a safe, enjoyable, and productive environment.</p>
         </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          <img src={playTrain1} alt="Dogs playing together in a play and train group" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
-          <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
-          <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
-          <div className="aspect-[4/5] w-full overflow-hidden rounded-3xl">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2">
+          <img src={playTrain1} alt="Dogs playing together in a play and train group" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
+          <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
+          <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
+          <div className="aspect-[4/3] w-full overflow-hidden rounded-3xl">
             <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="h-full w-full object-cover object-bottom" style={{ transform: "scale(1.55)", transformOrigin: "72% 100%" }} />
           </div>
         </div>
