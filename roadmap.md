@@ -26,6 +26,7 @@
 - Put Mark's newest photo (IMG_7976) in the "Board and Train" card
 - Restored the original photo to the top of the homepage
 - Moved the Play & Train photos below the text and added a fourth photo so all four are equal size
+- Shortened the Play & Train text and tightened spacing so the photo row peeks into view without scrolling
 
 ## Open
 
