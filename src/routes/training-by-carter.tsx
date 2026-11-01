@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import dogsResting from "@/assets/dogs-resting.jpeg";
 import trainingTwo from "@/assets/training-two.jpg.asset.json";
+import yardDay from "@/assets/yard-day.jpeg";
 import yardNight from "@/assets/yard-night.jpeg";
 
 export const Route = createFileRoute("/training-by-carter")({
@@ -43,7 +44,16 @@ function TrainingPage() {
         </div>
         <figure className="mx-auto mt-14 max-w-4xl">
           <h2 className="mb-6 text-center text-3xl leading-tight text-gold md:text-5xl">The Backyard</h2>
-          <img src={yardNight} alt="Spacious fenced backyard with turf, shade trees, and string lights at dusk" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg" />
+          <div className="grid gap-4 md:grid-cols-2 md:gap-6">
+ <div>
+ <img src={yardDay} alt="Fenced backyard in daylight with turf, shade trees, a concrete play pad, and toy balls" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg" />
+ <p className="mt-2 text-center font-body text-base uppercase tracking-widest text-gold">Day</p>
+ </div>
+ <div>
+ <img src={yardNight} alt="The same backyard at dusk, lit by string lights along the fence" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg" />
+ <p className="mt-2 text-center font-body text-base uppercase tracking-widest text-gold">Night</p>
+ </div>
+ </div>
           <figcaption className="mt-4 text-center font-body text-lg text-foreground/80 md:text-xl">A fully fenced, turf-covered yard with plenty of shade for play and training, plus string lights so dogs can play safely after dark.</figcaption>
         </figure>
       </section>
