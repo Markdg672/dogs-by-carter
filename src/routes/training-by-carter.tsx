@@ -44,7 +44,7 @@ function TrainingPage() {
         <figure className="mx-auto mt-14 max-w-4xl">
           <h2 className="mb-6 text-center text-3xl leading-tight text-gold md:text-5xl">The Backyard</h2>
           <img src={yardNight} alt="Spacious fenced backyard with turf, shade trees, and string lights at dusk" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg" />
-          <figcaption className="mt-4 text-center font-body text-lg text-foreground/80 md:text-xl">A fully fenced, turf-covered yard with plenty of shade for play and training.</figcaption>
+          <figcaption className="mt-4 text-center font-body text-lg text-foreground/80 md:text-xl">A fully fenced, turf-covered yard with plenty of shade for play and training, plus string lights so dogs can play safely after dark.</figcaption>
         </figure>
       </section>
       <SiteContact />
