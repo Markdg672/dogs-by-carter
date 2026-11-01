@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
-import trainingOne from "@/assets/training-one.jpg.asset.json";
+import dogsResting from "@/assets/dogs-resting.jpeg";
 import trainingTwo from "@/assets/training-two.jpg.asset.json";
 import yardNight from "@/assets/yard-night.jpeg";
 
@@ -32,7 +32,7 @@ function TrainingPage() {
         <h1 className="text-center text-4xl leading-tight text-gold md:text-6xl">Training by Carter</h1>
         <p className="mx-auto mt-6 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">Training by Carter is a highly personalized, immersive program designed to create real, lasting results.</p>
         <div className="mt-12 grid items-start gap-8 md:grid-cols-2">
-          <img src={trainingOne.url} alt="Training by Carter program photo" className="max-h-[620px] w-full object-contain" />
+          <img src={dogsResting} alt="A shepherd mix in a pink bandana resting on the lawn with a small Pomeranian curled up against her" className="max-h-[620px] w-full object-contain" />
           <img src={trainingTwo.url} alt="Dogs in Carter’s training program" className="max-h-[620px] w-full object-contain" />
         </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
