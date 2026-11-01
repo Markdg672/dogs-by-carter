@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import trainingOne from "@/assets/training-one.jpg.asset.json";
 import trainingTwo from "@/assets/training-two.jpg.asset.json";
+import yardNight from "@/assets/yard-night.jpeg";
 
 export const Route = createFileRoute("/training-by-carter")({
   head: () => ({
@@ -40,6 +41,11 @@ function TrainingPage() {
           <p>To maintain a high level of care and quality, I only take a limited number of dogs at a time.</p>
           <p>Owner involvement is a key part of this program. You’ll work directly with me during and after training so you know exactly how to maintain and build on your dog’s progress.</p>
         </div>
+        <figure className="mx-auto mt-14 max-w-4xl">
+          <h2 className="mb-6 text-center text-3xl leading-tight text-gold md:text-5xl">The Backyard</h2>
+          <img src={yardNight} alt="Spacious fenced backyard with turf, shade trees, and string lights at dusk" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg" />
+          <figcaption className="mt-4 text-center font-body text-lg text-foreground/80 md:text-xl">A fully fenced, turf-covered yard with plenty of shade for play and training.</figcaption>
+        </figure>
       </section>
       <SiteContact />
     </main>
