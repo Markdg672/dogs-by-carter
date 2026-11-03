@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
-import trainingOne from "@/assets/training-one.jpg.asset.json";
+import dogsResting from "@/assets/dogs-resting.jpeg";
 import trainingTwo from "@/assets/training-two.jpg.asset.json";
+import yardDay from "@/assets/yard-day.jpeg";
+import yardNight from "@/assets/yard-night.jpeg";
 
 export const Route = createFileRoute("/training-by-carter")({
   head: () => ({
@@ -31,7 +33,7 @@ function TrainingPage() {
         <h1 className="text-center text-4xl leading-tight text-gold md:text-6xl">Training by Carter</h1>
         <p className="mx-auto mt-6 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">Training by Carter is a highly personalized, immersive program designed to create real, lasting results.</p>
         <div className="mt-12 grid items-start gap-8 md:grid-cols-2">
-          <img src={trainingOne.url} alt="Training by Carter program photo" className="max-h-[620px] w-full object-contain" />
+          <img src={dogsResting} alt="A shepherd mix in a pink bandana resting on the lawn with a small Pomeranian curled up against her" className="max-h-[620px] w-full object-contain" />
           <img src={trainingTwo.url} alt="Dogs in Carter’s training program" className="max-h-[620px] w-full object-contain" />
         </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
@@ -40,6 +42,20 @@ function TrainingPage() {
           <p>To maintain a high level of care and quality, I only take a limited number of dogs at a time.</p>
           <p>Owner involvement is a key part of this program. You’ll work directly with me during and after training so you know exactly how to maintain and build on your dog’s progress.</p>
         </div>
+        <figure className="mx-auto mt-14 max-w-4xl">
+          <h2 className="mb-6 text-center text-3xl leading-tight text-gold md:text-5xl">The Backyard</h2>
+          <div className="grid gap-4 md:grid-cols-2 md:gap-6">
+ <div>
+ <img src={yardDay} alt="Fenced backyard in daylight with turf, shade trees, a concrete play pad, and toy balls" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg" />
+ <p className="mt-2 text-center font-body text-base uppercase tracking-widest text-gold">Day</p>
+ </div>
+ <div>
+ <img src={yardNight} alt="The same backyard at dusk, lit by string lights along the fence" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg" />
+ <p className="mt-2 text-center font-body text-base uppercase tracking-widest text-gold">Night</p>
+ </div>
+ </div>
+          <figcaption className="mt-4 text-center font-body text-lg text-foreground/80 md:text-xl">A fully fenced, turf-covered yard with plenty of shade for play and training, plus string lights so dogs can play safely after dark.</figcaption>
+        </figure>
       </section>
       <SiteContact />
     </main>

@@ -1,6 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import boardingAsset from "@/assets/boarding.jpg.asset.json";
+import groomingTub from "@/assets/grooming-tub.jpeg";
+
+const INCLUDED = [
+  { title: "Bath before going home", detail: "A rinse and wash in our grooming tub so your dog comes home clean." },
+  { title: "Fenced backyard", detail: "Turf, shade trees, and string lights for safe play day or night." },
+  { title: "Small play groups", detail: "Supervised time with compatible dogs." },
+  { title: "Daily outings", detail: "Park visits for fresh air and exercise." },
+  { title: "Home, not a kennel", detail: "Dogs relax indoors as part of the family." },
+];
 
 export const Route = createFileRoute("/boarding-by-carter")({
   head: () => ({
@@ -37,6 +46,23 @@ function BoardingPage() {
           <p>Each dog is thoughtfully integrated into small, compatible play groups and receives daily activity tailored to their energy level and temperament. This may include supervised social time with other dogs, as well as outings to parks for fresh air and exercise.</p>
           <p>To ensure safety and quality care, I only accept a limited number of dogs at a time.</p>
         </div>
+        <section aria-labelledby="included-heading" className="mx-auto mt-16 max-w-4xl">
+          <h2 id="included-heading" className="mb-8 text-center text-3xl leading-tight text-primary md:text-5xl">What&apos;s Included</h2>
+          <div className="grid items-center gap-8 md:grid-cols-2">
+            <figure>
+              <img src={groomingTub} alt="Stainless steel grooming tub with handheld sprayer and safety loops" loading="lazy" className="aspect-square w-full rounded-3xl object-cover shadow-lg" />
+              <figcaption className="mt-3 text-center font-body text-lg text-foreground/80">Our professional grooming tub</figcaption>
+            </figure>
+            <ul className="space-y-5 font-body text-xl leading-relaxed text-foreground/95 md:text-2xl">
+              {INCLUDED.map((item) => (
+                <li key={item.title} className="border-l-4 border-primary pl-4">
+                  <span className="block font-semibold">{item.title}</span>
+                  <span className="block text-lg text-foreground/80 md:text-xl">{item.detail}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
       </section>
       <SiteContact />
     </main>
