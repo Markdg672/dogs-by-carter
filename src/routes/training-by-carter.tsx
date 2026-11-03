@@ -46,7 +46,7 @@ function TrainingPage() {
           <h2 className="mb-6 text-center text-3xl leading-tight text-gold md:text-5xl">The Backyard</h2>
           <div className="grid gap-4 md:grid-cols-2 md:gap-6">
  <div>
- <img src={yardDay} alt="Fenced backyard in daylight with sanitizable turf, shade trees, a concrete play pad, and toy balls" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg" />
+ <img src={yardDay} alt="Fenced backyard in daylight with turf, shade trees, a concrete play pad, and toy balls" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg" />
  <p className="mt-2 text-center font-body text-base uppercase tracking-widest text-gold">Day</p>
  </div>
  <div>
@@ -54,7 +54,7 @@ function TrainingPage() {
  <p className="mt-2 text-center font-body text-base uppercase tracking-widest text-gold">Night</p>
  </div>
  </div>
-          <figcaption className="mt-4 text-center font-body text-lg text-foreground/80 md:text-xl">A fully fenced, turf-covered yard with plenty of shade for play and training, plus string lights so dogs can play safely after dark.</figcaption>
+          <figcaption className="mt-4 text-center font-body text-lg text-foreground/80 md:text-xl">A fully fenced, sanitizable turf-covered yard with plenty of shade for play and training, plus string lights so dogs can play safely after dark.</figcaption>
         </figure>
       </section>
       <SiteContact />
