@@ -1,6 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import boardingCorgi from "@/assets/boarding-corgi.jpg";
+import boardingCouchDogs from "@/assets/boarding-couch-dogs.jpg";
+import boardingGroupGrass from "@/assets/boarding-group-grass.jpg";
+import boardingCaneCorso from "@/assets/boarding-cane-corso.jpg";
+import boardingGsdBed from "@/assets/boarding-gsd-bed.jpg";
+import boardingGsdBlueBed from "@/assets/boarding-gsd-blue-bed.jpg";
 import groomingTub from "@/assets/grooming-tub.jpeg";
 
 const INCLUDED = [
@@ -38,8 +43,9 @@ function BoardingPage() {
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-12 md:pt-16">
         <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Boarding by Carter</h1>
         <p className="mx-auto mt-6 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">A safe, structured, and comfortable alternative to traditional kennel boarding.</p>
-        <div className="mt-12 grid justify-items-center">
-          <img src={boardingCorgi} alt="Corgi resting on the patio at Carter's home" className="mx-auto block max-h-[620px] w-auto max-w-full rounded-3xl object-contain" />
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+          <img src={boardingCorgi} alt="Corgi resting on the patio at Carter's home" className="aspect-[4/5] w-full rounded-3xl object-cover object-bottom" />
+          <img src={boardingCouchDogs} alt="Three dogs relaxing together on a couch at Carter's home" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
         </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
           <p>Your dog stays in my home on a fully fenced property—not in a large facility—allowing them to relax in a more natural, low-stress environment. Dogs are treated like part of the family while maintaining clear structure and supervision.</p>
@@ -63,6 +69,14 @@ function BoardingPage() {
             </ul>
           </div>
         </section>
+        <div className="mx-auto mt-16 grid max-w-4xl gap-6 sm:grid-cols-2">
+          <img src={boardingGroupGrass} alt="Five dogs resting together on the grass in the shade" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
+          <img src={boardingCaneCorso} alt="A black Cane Corso resting on the turf" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
+        </div>
+        <div className="mx-auto mt-6 grid max-w-4xl gap-6 sm:grid-cols-2">
+          <img src={boardingGsdBed} alt="A German Shepherd resting its head on a bed" loading="lazy" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
+          <img src={boardingGsdBlueBed} alt="A German Shepherd relaxing on an elevated outdoor bed" loading="lazy" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
+        </div>
       </section>
       <SiteContact />
     </main>
