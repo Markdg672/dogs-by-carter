@@ -27,6 +27,7 @@ export function SiteContact() {
               className="mt-10 aspect-square w-full rounded-3xl object-cover object-center"
             />
           </div>
+          <div>
           <form
             className="space-y-4"
             onSubmit={(e) => {
@@ -48,6 +49,24 @@ export function SiteContact() {
             </button>
             {sent && <p className="text-highlight">Thanks for reaching out!</p>}
           </form>
+            <div className="mt-10">
+              <h3 className="text-2xl">Find us in Northridge</h3>
+              <iframe
+                title="Map — Dogs by Carter in Northridge"
+                src="https://www.google.com/maps?q=Northridge%2C%20Los%20Angeles%2C%20CA&output=embed"
+                loading="lazy"
+                className="mt-4 h-[300px] w-full rounded-3xl border-0"
+              />
+              <a
+                href="https://www.google.com/maps?q=Northridge,+Los+Angeles,+CA"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-block font-bold text-highlight underline underline-offset-4"
+              >
+                Open in Google Maps <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
