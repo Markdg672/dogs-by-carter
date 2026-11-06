@@ -114,12 +114,15 @@ function Index() {
         <nav className="mx-auto grid max-w-6xl items-center gap-4 px-6 py-5 md:grid-cols-3">
           <Link to="/training-by-carter" className="order-3 justify-self-center whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-base font-bold uppercase tracking-[0.08em] text-ink shadow-md ring-1 ring-ink/10 transition-all hover:-translate-y-0.5 hover:shadow-lg md:order-none md:justify-self-start md:px-6 md:text-lg">Training by Carter</Link>
           <span className="text-center font-display text-2xl font-semibold leading-none underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">
-            Dogs <span className="font-normal italic text-ink-foreground/75">by</span>{" "}
-            <span className="text-highlight">Carter</span>
+            DOGS <span className="font-normal italic text-ink-foreground/75">BY</span>{" "}
+            <span className="text-highlight">CARTER</span>
           </span>
-          <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink justify-self-center md:justify-self-end md:px-5 md:text-lg">
-            {PHONE}
-          </a>
+          <div className="flex items-center gap-3 justify-self-center md:justify-self-end">
+            <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
+            <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink md:px-5 md:text-lg">
+              {PHONE}
+            </a>
+          </div>
         </nav>
         <div className="mx-auto grid max-w-6xl gap-10 px-6 pb-20 pt-10 md:grid-cols-5 md:items-center">
           <div className="md:col-span-2">
@@ -228,25 +231,39 @@ function Index() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-20">
-        <h2 className="text-center text-3xl text-primary md:text-4xl">Find us in Northridge</h2>
-        <p className="mx-auto mt-3 max-w-xl text-center text-lg text-foreground/80">
-          Serving Northridge and the San Fernando Valley.
-        </p>
-        <iframe
-          title="Map — Dogs by Carter in Northridge"
-          src="https://www.google.com/maps?q=Northridge%2C%20Los%20Angeles%2C%20CA&output=embed"
-          loading="lazy"
-          className="mt-8 h-[400px] w-full rounded-3xl border-0 shadow-lg"
-        />
-        <div className="mt-4 text-center">
-          <a
-            href="https://www.google.com/maps?q=Northridge,+Los+Angeles,+CA"
-            target="_blank"
-            rel="noreferrer"
-            className="text-lg font-bold text-primary underline underline-offset-4"
-          >
-            Open in Google Maps <span aria-hidden="true">→</span>
-          </a>
+        <h2 className="text-center text-3xl text-primary md:text-4xl">Frequently Asked Questions</h2>
+        <div className="mx-auto mt-8 max-w-3xl space-y-6">
+          <div className="rounded-3xl border bg-card p-6 shadow-sm">
+            <h3 className="text-2xl text-primary">What services does Dogs by Carter offer?</h3>
+            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">Board and Train, Play and Train daycare, private Coaching, and in-home Boarding.</p>
+          </div>
+          <div className="rounded-3xl border bg-card p-6 shadow-sm">
+            <h3 className="text-2xl text-primary">Where are you located?</h3>
+            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">In Northridge, in the San Fernando Valley.</p>
+          </div>
+          <div className="rounded-3xl border bg-card p-6 shadow-sm">
+            <h3 className="text-2xl text-primary">How do I book?</h3>
+            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">Call or text (949) 304-9888, or email dogsbycarter@gmail.com.</p>
+          </div>
+        </div>
+        <div className="mt-8 text-center">
+          <Link to="/faq" className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink">
+            See all frequently asked questions <span aria-hidden="true">→</span>
+          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="rounded-3xl border bg-card p-8 text-center shadow-lg">
+          <h2 className="text-3xl text-primary md:text-4xl">From the Blog</h2>
+          <p className="mx-auto mt-3 max-w-xl text-lg text-foreground/80">
+            Training tips, behind-the-scenes stories, and updates from Dogs by Carter — coming soon.
+          </p>
+          <div className="mt-6">
+            <Link to="/blog" className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink">
+              Visit the Blog <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
       </section>
 

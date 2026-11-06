@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
-import heroOriginalAsset from "@/assets/hero-original.jpg.asset.json";
 import carterBeanie from "@/assets/carter-beanie.jpg";
 import carterMotorcycle from "@/assets/carter-motorcycle.jpg";
 import carterSkydiving from "@/assets/carter-skydiving.jpg";
@@ -41,15 +40,15 @@ function AboutCarterPage() {
         <nav className="mx-auto grid max-w-6xl items-center gap-5 px-6 py-6 md:grid-cols-3">
           <Link to="/" className="order-3 justify-self-center text-xl font-semibold underline underline-offset-4 md:order-none md:justify-self-start">← Home</Link>
           <Link to="/" className="text-center font-display text-2xl font-semibold leading-none underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">Dogs <span className="font-normal italic text-ink-foreground/75">by</span> <span className="text-highlight">Carter</span></Link>
-          <a href="tel:9493049888" className="justify-self-center whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink md:justify-self-end">(949) 304-9888</a>
+          <div className="flex items-center gap-3 justify-self-center md:justify-self-end">
+            <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
+            <a href="tel:9493049888" className="whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink">(949) 304-9888</a>
+          </div>
         </nav>
       </header>
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-12 md:pt-16">
         <h1 className="text-center text-4xl leading-tight text-gold md:text-6xl">About Carter</h1>
         <p className="mx-auto mt-6 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">A son, brother, uncle, friend, and dog trainer.</p>
-        <div className="mt-12 grid justify-items-center">
-          <img src={heroOriginalAsset.url} alt="Carter training a dog in the park" className="mx-auto block max-h-[620px] w-auto max-w-full rounded-3xl object-contain" />
-        </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
           <p>I grew up in Minneapolis, Minnesota, where my love for dogs started early—spending time exploring the outdoors with my childhood dog, Sadie.</p>
           <p>My path into dog training wasn’t traditional. In my early 20s, I traveled the country working in commercial construction and later worked as an EMT in the Emergency Department. Those experiences taught me discipline, patience, and how to stay steady in high-pressure situations—qualities that naturally carried over into working with dogs.</p>
