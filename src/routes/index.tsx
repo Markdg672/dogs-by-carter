@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import playImg from "@/assets/play.jpg";
-import coachingAsset from "@/assets/coaching.jpg.asset.json";
-import boardingAsset from "@/assets/boarding.jpg.asset.json";
-import boardTrainAsset from "@/assets/board-train.jpg.asset.json";
-import heroOriginalAsset from "@/assets/hero-original.jpg.asset.json";
+import heroTanDog from "@/assets/home-hero-tan-dog.jpg";
+import heroWhiteDog from "@/assets/home-hero-white-dog.jpg";
+import coachingPark from "@/assets/home-coaching-park.jpg";
+import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
+import boardTrainResting from "@/assets/home-board-train-resting.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,7 +38,7 @@ const services = [
     name: "Board and Train",
     tag: "Training by Carter",
     lines: ["Real training", "Real results", "Immersive lifestyle training"],
-    img: boardTrainAsset.url,
+    img: boardTrainResting,
   },
   {
     name: "Play and Train",
@@ -49,13 +50,13 @@ const services = [
     name: "Coaching by Carter",
     tag: "Private Lessons",
     lines: ["Custom coaching", "Designed for your goals", "Simple, clear, effective, and fun"],
-    img: coachingAsset.url,
+    img: coachingPark,
   },
   {
     name: "Boarding by Carter",
     tag: "Overnight / Day Boarding",
     lines: ["Your dog in my home", "Play · Exercise · Relax"],
-    img: boardingAsset.url,
+    img: boardingShepherd,
   },
 ];
 
@@ -94,11 +95,18 @@ function Index() {
               Find your program
             </a>
           </div>
-          <img
-            src={heroOriginalAsset.url}
-            alt="Carter training a dog in the park"
-            className="aspect-[4/3] w-full rounded-3xl object-cover"
-          />
+          <div className="grid grid-cols-2 gap-4">
+            <img
+              src={heroTanDog}
+              alt="Carter kneeling beside a large tan dog"
+              className="aspect-[3/4] w-full rounded-3xl object-cover"
+            />
+            <img
+              src={heroWhiteDog}
+              alt="Carter kneeling beside a white and tan dog in front of a whiteboard"
+              className="aspect-[3/4] w-full rounded-3xl object-cover"
+            />
+          </div>
         </div>
       </header>
 
