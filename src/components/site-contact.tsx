@@ -1,5 +1,5 @@
 import { useState } from "react";
-import contactAsset from "@/assets/contact.jpg.asset.json";
+import homeContactRottweiler from "@/assets/home-contact-rottweiler.jpg";
 
 const PHONE = "(949) 304-9888";
 const EMAIL = "dogsbycarter@gmail.com";
@@ -21,8 +21,8 @@ export function SiteContact() {
               <a href={`mailto:${EMAIL}`} className="block">{EMAIL}</a>
             </div>
             <img
-              src={contactAsset.url}
-              alt="A dog leaping joyfully across the turf while another dog plays behind"
+              src={homeContactRottweiler}
+              alt="A Rottweiler leaping to catch an orange ball in the park"
               loading="lazy"
               className="mt-10 aspect-square w-full rounded-3xl object-cover object-center"
             />
