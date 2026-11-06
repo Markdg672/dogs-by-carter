@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
-import coachingAsset from "@/assets/coaching.jpg.asset.json";
+import coachingPark from "@/assets/home-coaching-park.jpg";
 
 export const Route = createFileRoute("/coaching-by-carter")({
   head: () => ({
@@ -37,9 +37,6 @@ function CoachingPage() {
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-12 md:pt-16">
         <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Coaching by Carter</h1>
         <p className="mx-auto mt-4 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">Private Training &amp; Owner Coaching</p>
-        <div className="mt-12 grid justify-items-center">
-          <img src={coachingAsset.url} alt="A focused German Shepherd holding a ball in the yard" className="max-h-[620px] w-full max-w-2xl object-contain" />
-        </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
           <p>Coaching by Carter is designed for owners who want to be directly involved in their dog’s training and learn how to create lasting results themselves.</p>
           <p>Having worked with many coaches and teachers throughout my life—from athletics to music and public speaking—I’ve experienced firsthand how much the quality of coaching can shape results. That perspective directly influences how I work with my clients today.</p>
@@ -48,6 +45,9 @@ function CoachingPage() {
           <p>Sessions are fully customized based on your dog, your goals, and your lifestyle. Training can take place in your home or in real-world environments like neighborhoods, parks, and public spaces—where behavior truly matters.</p>
           <p>Ongoing support is built into the process. Between sessions, you’ll have access to guidance through phone calls, video sharing, and Zoom check-ins to make sure you’re practicing correctly and continuing to make progress.</p>
           <p>This service is ideal for building foundational obedience, improving leash manners, and addressing common behavioral issues.</p>
+        </div>
+        <div className="mt-12 grid justify-items-center">
+          <img src={coachingPark} alt="Carter training a light-colored dog in the park" loading="lazy" className="w-full max-w-2xl rounded-3xl object-cover" />
         </div>
       </section>
       <SiteContact />
