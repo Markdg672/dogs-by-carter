@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
-import boardingAsset from "@/assets/boarding.jpg.asset.json";
+import boardingCorgi from "@/assets/boarding-corgi.jpg";
 import groomingTub from "@/assets/grooming-tub.jpeg";
 
 const INCLUDED = [
@@ -39,7 +39,7 @@ function BoardingPage() {
         <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Boarding by Carter</h1>
         <p className="mx-auto mt-6 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">A safe, structured, and comfortable alternative to traditional kennel boarding.</p>
         <div className="mt-12 grid justify-items-center">
-          <img src={boardingAsset.url} alt="Dog resting in the yard at Carter's home" className="mx-auto block max-h-[620px] w-auto max-w-full rounded-3xl object-contain" />
+          <img src={boardingCorgi} alt="Corgi resting on the patio at Carter's home" className="mx-auto block max-h-[620px] w-auto max-w-full rounded-3xl object-contain" />
         </div>
         <div className="mx-auto mt-12 max-w-3xl space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
           <p>Your dog stays in my home on a fully fenced property—not in a large facility—allowing them to relax in a more natural, low-stress environment. Dogs are treated like part of the family while maintaining clear structure and supervision.</p>
