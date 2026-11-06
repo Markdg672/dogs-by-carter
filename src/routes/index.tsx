@@ -74,8 +74,8 @@ function Index() {
             {PHONE}
           </a>
         </nav>
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 pb-20 pt-10 md:grid-cols-2 md:items-center">
-          <div>
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 pb-20 pt-10 md:grid-cols-5 md:items-center">
+          <div className="md:col-span-2">
             <p className="mb-4 text-lg font-bold uppercase tracking-[0.18em] text-highlight">
               Training · Daycare · Boarding
             </p>
@@ -94,8 +94,14 @@ function Index() {
             >
               Find your program
             </a>
+            <Link
+              to="/about-carter"
+              className="mt-5 block w-fit text-lg font-bold text-highlight underline underline-offset-4 hover:text-ink-foreground"
+            >
+              Meet Carter <span aria-hidden="true">→</span>
+            </Link>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 md:col-span-3">
             <img
               src={heroTanDog}
               alt="Carter kneeling beside a large tan dog"
