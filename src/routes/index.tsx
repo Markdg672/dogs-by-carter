@@ -1,11 +1,58 @@
+import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import playImg from "@/assets/play.jpg";
 import heroTanDog from "@/assets/home-hero-tan-dog.jpg";
 import heroWhiteDog from "@/assets/home-hero-white-dog.jpg";
+import heroSlidePaw from "@/assets/hero-slide-paw.jpg";
+import heroSlideTug from "@/assets/hero-slide-tug.jpg";
+import heroSlideJump from "@/assets/hero-slide-jump.jpg";
 import coachingPark from "@/assets/home-coaching-park.jpg";
 import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
 import boardTrainResting from "@/assets/home-board-train-resting.jpg";
+
+const SLIDES = [
+  { src: heroTanDog, alt: "Carter kneeling beside a large tan dog", pos: "object-center" },
+  { src: heroWhiteDog, alt: "Carter kneeling beside a white and tan dog in front of a whiteboard", pos: "object-center" },
+  { src: heroSlidePaw, alt: "Carter kneeling as a white dog gives him its paw", pos: "object-center" },
+  { src: heroSlideTug, alt: "A white dog tugging a toy on the turf", pos: "object-center" },
+  { src: heroSlideJump, alt: "A brown dog leaping to catch a red ball in the backyard", pos: "object-[25%_center]" },
+];
+
+function HeroSlideshow() {
+  const [current, setCurrent] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => setCurrent((v) => (v + 1) % SLIDES.length), 5000);
+    return () => clearInterval(timer);
+  }, []);
+  const prev = () => setCurrent((v) => (v - 1 + SLIDES.length) % SLIDES.length);
+  const next = () => setCurrent((v) => (v + 1) % SLIDES.length);
+  return (
+    <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl">
+      {SLIDES.map((s, i) => (
+        <img
+          key={s.alt}
+          src={s.src}
+          alt={s.alt}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${s.pos} ${i === current ? "opacity-100" : "opacity-0"}`}
+        />
+      ))}
+      <button type="button" onClick={prev} aria-label="Previous photo" className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-ink/60 px-3 py-2 text-xl font-bold text-white hover:bg-ink">‹</button>
+      <button type="button" onClick={next} aria-label="Next photo" className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-ink/60 px-3 py-2 text-xl font-bold text-white hover:bg-ink">›</button>
+      <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
+        {SLIDES.map((s, i) => (
+          <button
+            key={s.alt}
+            type="button"
+            onClick={() => setCurrent(i)}
+            aria-label={`Go to photo ${i + 1}`}
+            className={`h-2.5 w-2.5 rounded-full ${i === current ? "bg-highlight" : "bg-white/70"}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -94,24 +141,15 @@ function Index() {
             >
               Find your program
             </a>
+          </div>
+          <div className="md:col-span-3">
+            <HeroSlideshow />
             <Link
               to="/about-carter"
-              className="mt-5 block w-fit text-lg font-bold text-highlight underline underline-offset-4 hover:text-ink-foreground"
+              className="mt-4 block rounded-full bg-highlight px-8 py-4 text-center text-lg font-bold uppercase tracking-[0.08em] text-ink shadow-lg transition-transform hover:-translate-y-0.5"
             >
               Meet Carter <span aria-hidden="true">→</span>
             </Link>
-          </div>
-          <div className="grid grid-cols-2 gap-4 md:col-span-3">
-            <img
-              src={heroTanDog}
-              alt="Carter kneeling beside a large tan dog"
-              className="aspect-[3/4] w-full rounded-3xl object-cover"
-            />
-            <img
-              src={heroWhiteDog}
-              alt="Carter kneeling beside a white and tan dog in front of a whiteboard"
-              className="aspect-[3/4] w-full rounded-3xl object-cover"
-            />
           </div>
         </div>
       </header>
@@ -167,6 +205,48 @@ function Index() {
               </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="rounded-3xl border bg-card p-8 text-center shadow-lg">
+          <h2 className="text-3xl text-primary md:text-4xl">Find Dogs by Carter online</h2>
+          <p className="mx-auto mt-3 max-w-xl text-lg text-foreground/80">
+            Check out reviews and see what we&apos;re up to.
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+            >
+              Yelp — Dogs by Carter <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <h2 className="text-center text-3xl text-primary md:text-4xl">Find us in Northridge</h2>
+        <p className="mx-auto mt-3 max-w-xl text-center text-lg text-foreground/80">
+          Serving Northridge and the San Fernando Valley.
+        </p>
+        <iframe
+          title="Map — Dogs by Carter in Northridge"
+          src="https://www.google.com/maps?q=Northridge%2C%20Los%20Angeles%2C%20CA&output=embed"
+          loading="lazy"
+          className="mt-8 h-[400px] w-full rounded-3xl border-0 shadow-lg"
+        />
+        <div className="mt-4 text-center">
+          <a
+            href="https://www.google.com/maps?q=Northridge,+Los+Angeles,+CA"
+            target="_blank"
+            rel="noreferrer"
+            className="text-lg font-bold text-primary underline underline-offset-4"
+          >
+            Open in Google Maps <span aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
 
