@@ -113,11 +113,12 @@ function Index() {
       <header className="bg-ink text-ink-foreground">
         <nav className="mx-auto grid max-w-6xl items-center gap-4 px-6 py-5 md:grid-cols-3">
           <Link to="/training-by-carter" className="order-3 justify-self-center whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-base font-bold uppercase tracking-[0.08em] text-ink shadow-md ring-1 ring-ink/10 transition-all hover:-translate-y-0.5 hover:shadow-lg md:order-none md:justify-self-start md:px-6 md:text-lg">Training by Carter</Link>
-          <span className="text-center font-display text-2xl font-semibold leading-none underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">
+          <span className="text-center font-display text-2xl font-semibold leading-none whitespace-nowrap underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">
             DOGS <span className="font-normal italic text-ink-foreground/75">BY</span>{" "}
             <span className="text-highlight">CARTER</span>
           </span>
-          <div className="flex items-center gap-3 justify-self-center md:justify-self-end">
+          <div className="flex flex-wrap items-center justify-center gap-3 justify-self-center md:justify-self-end">
+            <a href="#" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Instagram</a>
             <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
             <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink md:px-5 md:text-lg">
               {PHONE}
@@ -217,7 +218,7 @@ function Index() {
           <p className="mx-auto mt-3 max-w-xl text-lg text-foreground/80">
             Check out reviews and see what we&apos;re up to.
           </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-4">
+          <div className="mt-6 flex flex-col flex-wrap items-center gap-4">
             <a
               href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter"
               target="_blank"
@@ -225,6 +226,12 @@ function Index() {
               className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
             >
               Yelp — Dogs by Carter <span aria-hidden="true">→</span>
+            </a>
+            <a
+              href="#"
+              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+            >
+              Instagram <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
@@ -235,11 +242,11 @@ function Index() {
         <div className="mx-auto mt-8 max-w-3xl space-y-6">
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h3 className="text-2xl text-primary">What services does Dogs by Carter offer?</h3>
-            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">Board and Train, Play and Train daycare, private Coaching, and in-home Boarding.</p>
+            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">boarding/daycare, board and train, private coaching, play and train</p>
           </div>
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h3 className="text-2xl text-primary">Where are you located?</h3>
-            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">In Northridge, in the San Fernando Valley.</p>
+            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">In Northridge, in the San Fernando Valley. Scroll down to see maps.</p>
           </div>
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h3 className="text-2xl text-primary">How do I book?</h3>
