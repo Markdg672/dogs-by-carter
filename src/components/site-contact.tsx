@@ -53,12 +53,12 @@ export function SiteContact() {
               <h3 className="text-2xl">Find us in Northridge</h3>
               <iframe
                 title="Map — Dogs by Carter in Northridge"
-                src="https://www.google.com/maps?q=Northridge%2C%20Los%20Angeles%2C%20CA&output=embed"
+                src="https://www.google.com/maps?q=Winnetka+Ave+%26+Parthenia+St%2C+Northridge%2C+CA&output=embed"
                 loading="lazy"
                 className="mt-4 h-[300px] w-full rounded-3xl border-0"
               />
               <a
-                href="https://www.google.com/maps?q=Northridge,+Los+Angeles,+CA"
+                href="https://www.google.com/maps?q=Winnetka+Ave+%26+Parthenia+St,+Northridge,+CA"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-3 inline-block font-bold text-highlight underline underline-offset-4"
