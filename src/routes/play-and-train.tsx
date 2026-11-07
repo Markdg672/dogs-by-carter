@@ -4,6 +4,8 @@ import playTrain1 from "@/assets/play-train-1.jpg";
 import playTrain2 from "@/assets/play-train-2.jpg";
 import playTrain3 from "@/assets/play-train-3.jpg";
 import playTrain4Asset from "@/assets/play-train-4.jpg.asset.json";
+import playTrainBall from "@/assets/play-train-orange-ball.jpg";
+import playTrainVideo from "@/assets/play-train-blue-ball.mp4";
 
 export const Route = createFileRoute("/play-and-train")({
   head: () => ({
@@ -56,6 +58,10 @@ function PlayTrainPage() {
           <div className="aspect-[4/3] w-full overflow-hidden rounded-3xl">
             <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="h-full w-full object-cover object-bottom" style={{ transform: "scale(1.2)", transformOrigin: "72% 100%" }} />
           </div>
+        </div>
+        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          <img src={playTrainBall} alt="A shepherd mix resting on the grass with an orange ball in its mouth" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
+          <video src={playTrainVideo} autoPlay muted loop playsInline className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
         </div>
       </section>
       <SiteContact />

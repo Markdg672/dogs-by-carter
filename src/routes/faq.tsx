@@ -27,7 +27,7 @@ const FAQS = [
   },
   {
     q: "What is included with boarding?",
-    a: "Grooming services (bath, trimming, and more), a fenced backyard, small play groups, daily outings, and a home — not a kennel — for your dog to relax in.",
+    a: "A fenced backyard, small play groups, daily outings, and a home — not a kennel — for your dog to relax in. Grooming services (bath, trimming, and more) are available upon request.",
   },
   {
     q: "How many dogs do you take at a time?",

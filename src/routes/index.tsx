@@ -233,6 +233,18 @@ function Index() {
             >
               Instagram <span aria-hidden="true">→</span>
             </a>
+            <a
+              href="#"
+              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+            >
+              Facebook <span aria-hidden="true">→</span>
+            </a>
+            <a
+              href="#"
+              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+            >
+              TikTok <span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
       </section>

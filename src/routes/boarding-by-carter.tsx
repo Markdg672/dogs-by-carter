@@ -9,7 +9,7 @@ import boardingGsdBlueBed from "@/assets/boarding-gsd-blue-bed.jpg";
 import groomingTub from "@/assets/grooming-tub.jpeg";
 
 const INCLUDED = [
-  { title: "Grooming services", detail: "Bath, trimming, and more in our grooming tub, so your dog comes home clean." },
+  { title: "Grooming services", detail: "Bath, trimming, and more in our grooming tub, so your dog comes home clean. Available upon request." },
   { title: "Fenced backyard", detail: "Turf, shade trees, and string lights for safe play day or night." },
   { title: "Small play groups", detail: "Supervised time with compatible dogs." },
   { title: "Daily outings", detail: "Park visits for fresh air and exercise." },
