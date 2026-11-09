@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import coachingPark from "@/assets/home-coaching-park.jpg";
+import coachingMalinois from "@/assets/malinois-hug.jpg";
 
 export const Route = createFileRoute("/coaching-by-carter")({
   head: () => ({
@@ -32,7 +33,7 @@ function CoachingPage() {
           <Link to="/" className="order-3 justify-self-center text-xl font-semibold underline underline-offset-4 md:order-none md:justify-self-start">← Home</Link>
           <Link to="/" className="text-center font-display text-2xl font-semibold leading-none underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">Dogs <span className="font-normal italic text-ink-foreground/75">by</span> <span className="text-highlight">Carter</span></Link>
           <div className="flex flex-wrap items-center justify-center gap-3 justify-self-center md:justify-self-end">
-            <a href="#" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Instagram</a>
+            <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Instagram</a>
             <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
             <a href="tel:9493049888" className="whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink">(949) 304-9888</a>
           </div>
@@ -50,8 +51,9 @@ function CoachingPage() {
           <p>Ongoing support is built into the process. Between sessions, you’ll have access to guidance through phone calls, video sharing, and Zoom check-ins to make sure you’re practicing correctly and continuing to make progress.</p>
           <p>This service is ideal for building foundational obedience, improving leash manners, and addressing common behavioral issues.</p>
         </div>
-        <div className="mt-12 grid justify-items-center">
-          <img src={coachingPark} alt="Carter training a light-colored dog in the park" loading="lazy" className="w-full max-w-2xl rounded-3xl object-cover" />
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
+          <img src={coachingPark} alt="Carter training a light-colored dog in the park" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
+          <img src={coachingMalinois} alt="Carter hugging a Belgian Malinois in the yard" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
         </div>
       </section>
       <SiteContact />

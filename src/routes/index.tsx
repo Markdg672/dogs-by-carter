@@ -7,6 +7,7 @@ import heroWhiteDog from "@/assets/home-hero-white-dog.jpg";
 import heroSlidePaw from "@/assets/hero-slide-paw.jpg";
 import heroSlideTug from "@/assets/hero-slide-tug.jpg";
 import heroSlideJump from "@/assets/hero-slide-jump.jpg";
+import slideMalinois from "@/assets/malinois-hug.jpg";
 import coachingPark from "@/assets/home-coaching-park.jpg";
 import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
 import boardTrainResting from "@/assets/home-board-train-resting.jpg";
@@ -17,6 +18,7 @@ const SLIDES = [
   { src: heroSlidePaw, alt: "Carter kneeling as a white dog gives him its paw", pos: "object-center" },
   { src: heroSlideTug, alt: "A white dog tugging a toy on the turf", pos: "object-center" },
   { src: heroSlideJump, alt: "A brown dog leaping to catch a red ball in the backyard", pos: "object-[25%_center]" },
+  { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-center" },
 ];
 
 function HeroSlideshow() {
@@ -118,7 +120,7 @@ function Index() {
             <span className="text-highlight">CARTER</span>
           </span>
           <div className="flex flex-wrap items-center justify-center gap-3 justify-self-center md:justify-self-end">
-            <a href="#" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Instagram</a>
+            <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Instagram</a>
             <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
             <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink md:px-5 md:text-lg">
               {PHONE}
@@ -228,7 +230,9 @@ function Index() {
               Yelp — Dogs by Carter <span aria-hidden="true">→</span>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/dogsbycarterllc/"
+              target="_blank"
+              rel="noreferrer"
               className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
             >
               Instagram <span aria-hidden="true">→</span>
@@ -254,7 +258,7 @@ function Index() {
         <div className="mx-auto mt-8 max-w-3xl space-y-6">
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h3 className="text-2xl text-primary">What services does Dogs by Carter offer?</h3>
-            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">boarding/daycare, board and train, private coaching, play and train</p>
+            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">boarding/daycare, board and train, private coaching, play and train, grooming</p>
           </div>
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h3 className="text-2xl text-primary">Where are you located?</h3>
