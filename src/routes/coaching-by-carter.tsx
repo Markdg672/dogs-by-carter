@@ -53,7 +53,7 @@ function CoachingPage() {
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           <img src={coachingPark} alt="Carter training a light-colored dog in the park" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
-          <img src={coachingMalinois} alt="Carter hugging a Belgian Malinois in the yard" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
+          <img src={coachingMalinois} alt="Carter hugging a Belgian Malinois in the yard" loading="lazy" className="aspect-[4/3] w-full rounded-3xl object-cover object-top" />
         </div>
       </section>
       <SiteContact />

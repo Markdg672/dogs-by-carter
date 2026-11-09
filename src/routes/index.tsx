@@ -18,7 +18,7 @@ const SLIDES = [
   { src: heroSlidePaw, alt: "Carter kneeling as a white dog gives him its paw", pos: "object-center" },
   { src: heroSlideTug, alt: "A white dog tugging a toy on the turf", pos: "object-center" },
   { src: heroSlideJump, alt: "A brown dog leaping to catch a red ball in the backyard", pos: "object-[25%_center]" },
-  { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-center" },
+  { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-top" },
 ];
 
 function HeroSlideshow() {
