@@ -4,7 +4,7 @@ import homeContactRottweiler from "@/assets/home-contact-rottweiler.jpg";
 const PHONE = "(949) 304-9888";
 const EMAIL = "dogsbycarter@gmail.com";
 
-export function SiteContact() {
+export function SiteContact({ photo, photoAlt }: { photo?: string; photoAlt?: string }) {
   const [sent, setSent] = useState(false);
   return (
     <>
@@ -21,8 +21,8 @@ export function SiteContact() {
               <a href={`mailto:${EMAIL}`} className="block">{EMAIL}</a>
             </div>
             <img
-              src={homeContactRottweiler}
-              alt="A Rottweiler leaping to catch an orange ball in the park"
+              src={photo ?? homeContactRottweiler}
+              alt={photoAlt ?? "A Rottweiler leaping to catch an orange ball in the park"}
               loading="lazy"
               className="mt-10 aspect-square w-full rounded-3xl object-cover object-center"
             />
