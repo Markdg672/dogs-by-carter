@@ -4,6 +4,7 @@ import trainingCafe from "@/assets/training-cafe.jpg";
 import trainingRestaurant from "@/assets/training-restaurant.jpg";
 import yardDay from "@/assets/yard-day.jpeg";
 import yardNight from "@/assets/yard-night.jpeg";
+import contactMalinoisBall from "@/assets/contact-malinois-ball.jpg";
 
 export const Route = createFileRoute("/training-by-carter")({
   head: () => ({
@@ -27,7 +28,7 @@ function TrainingPage() {
           <Link to="/" className="order-3 justify-self-center text-xl font-semibold underline underline-offset-4 md:order-none md:justify-self-start">← Home</Link>
           <Link to="/" className="text-center font-display text-2xl font-semibold leading-none underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">Dogs <span className="font-normal italic text-ink-foreground/75">by</span> <span className="text-highlight">Carter</span></Link>
           <div className="flex flex-wrap items-center justify-center gap-3 justify-self-center md:justify-self-end">
-            <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Instagram</a>
+            <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] px-4 py-2 text-base font-bold text-white">Instagram</a>
             <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
             <a href="tel:9493049888" className="whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink">(949) 304-9888</a>
           </div>
@@ -61,7 +62,7 @@ function TrainingPage() {
           <figcaption className="mt-4 text-center font-body text-lg text-foreground/80 md:text-xl">A fully fenced, sanitizable turf-covered yard with plenty of shade for play and training, plus string lights so dogs can play safely after dark.</figcaption>
         </figure>
       </section>
-      <SiteContact />
+      <SiteContact photo={contactMalinoisBall} photoAlt="A Belgian Malinois resting on the turf with a blue ball" />
     </main>
   );
 }

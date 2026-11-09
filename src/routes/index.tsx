@@ -13,12 +13,12 @@ import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
 import boardTrainResting from "@/assets/home-board-train-resting.jpg";
 
 const SLIDES = [
+  { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-top" },
   { src: heroTanDog, alt: "Carter kneeling beside a large tan dog", pos: "object-center" },
   { src: heroWhiteDog, alt: "Carter kneeling beside a white and tan dog in front of a whiteboard", pos: "object-center" },
   { src: heroSlidePaw, alt: "Carter kneeling as a white dog gives him its paw", pos: "object-center" },
   { src: heroSlideTug, alt: "A white dog tugging a toy on the turf", pos: "object-center" },
   { src: heroSlideJump, alt: "A brown dog leaping to catch a red ball in the backyard", pos: "object-[25%_center]" },
-  { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-top" },
 ];
 
 function HeroSlideshow() {
@@ -120,7 +120,7 @@ function Index() {
             <span className="text-highlight">CARTER</span>
           </span>
           <div className="flex flex-wrap items-center justify-center gap-3 justify-self-center md:justify-self-end">
-            <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Instagram</a>
+            <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] px-4 py-2 text-base font-bold text-white">Instagram</a>
             <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
             <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink md:px-5 md:text-lg">
               {PHONE}
@@ -233,19 +233,19 @@ function Index() {
               href="https://www.instagram.com/dogsbycarterllc/"
               target="_blank"
               rel="noreferrer"
-              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+              className="inline-block rounded-full bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:opacity-90"
             >
               Instagram <span aria-hidden="true">→</span>
             </a>
             <a
               href="#"
-              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+              className="inline-block rounded-full bg-[#1877f2] px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:opacity-90"
             >
               Facebook <span aria-hidden="true">→</span>
             </a>
             <a
               href="#"
-              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+              className="inline-block rounded-full bg-black px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:opacity-90"
             >
               TikTok <span aria-hidden="true">→</span>
             </a>
@@ -286,6 +286,48 @@ function Index() {
             <Link to="/blog" className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink">
               Visit the Blog <span aria-hidden="true">→</span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <h2 className="text-center text-3xl text-primary md:text-4xl">What dog owners say</h2>
+        <p className="mx-auto mt-3 max-w-xl text-center text-lg text-foreground/80">
+          Rated 5.0 stars on{" "}
+          <a
+            href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter"
+            target="_blank"
+            rel="noreferrer"
+            className="font-bold text-primary underline underline-offset-4"
+          >
+            Yelp
+          </a>{" "}
+          — 12 reviews and counting.
+        </p>
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="rounded-3xl border bg-card p-6 shadow-sm">
+            <p className="text-xl tracking-widest text-highlight" aria-label="5 out of 5 stars">★★★★★</p>
+            <p className="mt-3 font-body text-lg leading-relaxed text-foreground/90">
+              &ldquo;Needed a last minute day care for my 1 y/o Doberman, and came across DogsbyCarter from a friend&rsquo;s suggestion, and let me tell you, I&rsquo;ve taken Creed to this day care for several days now and Carter has gone above and beyond to make my boy feel like at home, place was clean and safe, I would highly recommend him if you ever need somebody to take care of your beloved pet!&rdquo;
+            </p>
+            <p className="mt-4 font-bold">— Xavi H.</p>
+            <p className="text-sm text-foreground/70">Day Care · Aug 2026 · via Yelp</p>
+          </div>
+          <div className="rounded-3xl border bg-card p-6 shadow-sm">
+            <p className="text-xl tracking-widest text-highlight" aria-label="5 out of 5 stars">★★★★★</p>
+            <p className="mt-3 font-body text-lg leading-relaxed text-foreground/90">
+              &ldquo;First time taking our rescue Doberman, Denzel, to a groomer and Carter and his team exceeded all expectations! Our pup has sensitive skin needs, but Carter handled him with so much care. He even sent videos of the bath and nail trim. Denzel had a blast and we are so relieved. Thank you, Dogs by Carter!&rdquo;
+            </p>
+            <p className="mt-4 font-bold">— Danielle T.</p>
+            <p className="text-sm text-foreground/70">Grooming · Nov 2026 · via Yelp</p>
+          </div>
+          <div className="rounded-3xl border bg-card p-6 shadow-sm">
+            <p className="text-xl tracking-widest text-highlight" aria-label="5 out of 5 stars">★★★★★</p>
+            <p className="mt-3 font-body text-lg leading-relaxed text-foreground/90">
+              &ldquo;Our experience with Carter has been 10 stars from the very beginning. We left Koda to board with him for a weekend and it was the best decision ever. We trust Carter more than we could trust our extended family because we knew Koda would be well taken care of. Take this as your sign to choose Carter for your pet training and/or boarding — 100/10 recommend!&rdquo;
+            </p>
+            <p className="mt-4 font-bold">— Regine B.</p>
+            <p className="text-sm text-foreground/70">Training &amp; Boarding · Oct 2026 · via Yelp</p>
           </div>
         </div>
       </section>

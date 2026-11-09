@@ -6,6 +6,7 @@ import playTrain3 from "@/assets/play-train-3.jpg";
 import playTrain4Asset from "@/assets/play-train-4.jpg.asset.json";
 import playTrainBall from "@/assets/play-train-orange-ball.jpg";
 import playTrainVideo from "@/assets/play-train-blue-ball.mp4";
+import contactRottweilerBall from "@/assets/contact-rottweiler-ball.jpg";
 
 export const Route = createFileRoute("/play-and-train")({
   head: () => ({
@@ -37,7 +38,7 @@ function PlayTrainPage() {
           <Link to="/" className="order-3 justify-self-center text-xl font-semibold underline underline-offset-4 md:order-none md:justify-self-start">← Home</Link>
           <Link to="/" className="text-center font-display text-2xl font-semibold leading-none underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">Dogs <span className="font-normal italic text-ink-foreground/75">by</span> <span className="text-highlight">Carter</span></Link>
           <div className="flex flex-wrap items-center justify-center gap-3 justify-self-center md:justify-self-end">
-            <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Instagram</a>
+            <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] px-4 py-2 text-base font-bold text-white">Instagram</a>
             <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
             <a href="tel:9493049888" className="whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink">(949) 304-9888</a>
           </div>
@@ -64,7 +65,7 @@ function PlayTrainPage() {
           <video src={playTrainVideo} autoPlay muted loop playsInline className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
         </div>
       </section>
-      <SiteContact />
+      <SiteContact photo={contactRottweilerBall} photoAlt="A Rottweiler on the turf looking at a ball" />
     </main>
   );
 }
