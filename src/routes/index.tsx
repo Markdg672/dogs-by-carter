@@ -11,7 +11,6 @@ import slideMalinois from "@/assets/malinois-hug.jpg";
 import coachingPark from "@/assets/home-coaching-park.jpg";
 import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
 import boardTrainResting from "@/assets/home-board-train-resting.jpg";
-import groomingTub from "@/assets/grooming-tub.jpeg";
 
 const SLIDES = [
   { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-top" },
@@ -111,12 +110,6 @@ const services = [
     lines: ["Custom coaching", "Designed for your goals", "Simple, clear, effective, and fun"],
     img: coachingPark,
   },
-  {
-    name: "Grooming by Carter",
-    tag: "Bath · Trim · Shave",
-    lines: ["Bath in about 45 min", "Trim & bath, 2 hours", "Book online"],
-    img: groomingTub,
-  },
 ];
 
 function Index() {
@@ -161,7 +154,7 @@ function Index() {
               href={BOOKING_URL}
               target="_blank"
               rel="noreferrer"
-              className="mt-4 block w-fit rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+              className="mt-4 block w-fit rounded-full bg-highlight px-8 py-4 text-lg font-bold uppercase tracking-[0.08em] text-ink transition-transform hover:-translate-y-0.5"
             >
               Book grooming online →
             </a>
@@ -224,11 +217,6 @@ function Index() {
                 {s.name === "Coaching by Carter" && (
                   <Link to="/coaching-by-carter" className={CTA}>
                     Explore Coaching by Carter <span aria-hidden="true">→</span>
-                  </Link>
-                )}
-                {s.name === "Grooming by Carter" && (
-                  <Link to="/grooming-by-carter" className={CTA}>
-                    Explore Grooming by Carter <span aria-hidden="true">→</span>
                   </Link>
                 )}
               </div>
