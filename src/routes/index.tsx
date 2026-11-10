@@ -11,6 +11,7 @@ import slideMalinois from "@/assets/malinois-hug.jpg";
 import coachingPark from "@/assets/home-coaching-park.jpg";
 import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
 import boardTrainResting from "@/assets/home-board-train-resting.jpg";
+import groomingTub from "@/assets/grooming-tub.jpeg";
 
 const SLIDES = [
   { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-top" },
@@ -79,6 +80,9 @@ export const Route = createFileRoute("/")({
 
 const PHONE = "(949) 304-9888";
 
+// Carter's Google Calendar grooming booking link.
+const BOOKING_URL = "https://calendar.app.google/4ro5Tgas11opuxMD8";
+
 const CTA =
   "mt-8 inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg ring-1 ring-primary/25 transition-all hover:-translate-y-0.5 hover:bg-ink hover:shadow-xl";
 
@@ -88,6 +92,12 @@ const services = [
     tag: "Training by Carter",
     lines: ["Real training", "Real results", "Immersive lifestyle training"],
     img: boardTrainResting,
+  },
+  {
+    name: "Boarding by Carter",
+    tag: "Overnight / Day Boarding",
+    lines: ["Your dog in my home", "Play · Exercise · Relax"],
+    img: boardingShepherd,
   },
   {
     name: "Play and Train",
@@ -102,10 +112,10 @@ const services = [
     img: coachingPark,
   },
   {
-    name: "Boarding by Carter",
-    tag: "Overnight / Day Boarding",
-    lines: ["Your dog in my home", "Play · Exercise · Relax"],
-    img: boardingShepherd,
+    name: "Grooming by Carter",
+    tag: "Bath · Trim · Shave",
+    lines: ["Bath in about 45 min", "Trim & bath, 2 hours", "Book online"],
+    img: groomingTub,
   },
 ];
 
@@ -146,6 +156,14 @@ function Index() {
               className="mt-8 inline-block rounded-full bg-highlight px-8 py-4 text-lg font-bold uppercase tracking-[0.08em] text-ink transition-transform hover:-translate-y-0.5"
             >
               Find your program
+            </a>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 block w-fit rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+            >
+              Book grooming online →
             </a>
           </div>
           <div className="md:col-span-3">
@@ -206,6 +224,11 @@ function Index() {
                 {s.name === "Coaching by Carter" && (
                   <Link to="/coaching-by-carter" className={CTA}>
                     Explore Coaching by Carter <span aria-hidden="true">→</span>
+                  </Link>
+                )}
+                {s.name === "Grooming by Carter" && (
+                  <Link to="/grooming-by-carter" className={CTA}>
+                    Explore Grooming by Carter <span aria-hidden="true">→</span>
                   </Link>
                 )}
               </div>

@@ -9,6 +9,9 @@ import boardingGsdBlueBed from "@/assets/boarding-gsd-blue-bed.jpg";
 import contactTwoDogs from "@/assets/contact-two-dogs.jpg";
 import groomingTub from "@/assets/grooming-tub.jpeg";
 
+// Carter's Google Calendar grooming booking link.
+const BOOKING_URL = "https://calendar.app.google/4ro5Tgas11opuxMD8";
+
 const INCLUDED = [
   { title: "Grooming services", detail: "Bath, trimming, and more in our grooming tub, so your dog comes home clean. Available upon request." },
   { title: "Fenced backyard", detail: "Turf, shade trees, and string lights for safe play day or night." },
@@ -72,6 +75,17 @@ function BoardingPage() {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="mt-10 text-center">
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+            >
+              Book grooming online →
+            </a>
+            <p className="mt-3 font-body text-lg text-foreground/80">Bath, trimming, and shave &amp; bath — pick your date and time.</p>
           </div>
         </section>
         <div className="mx-auto mt-16 grid max-w-4xl gap-6 sm:grid-cols-2">
