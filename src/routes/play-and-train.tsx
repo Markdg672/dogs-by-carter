@@ -61,11 +61,9 @@ function PlayTrainPage() {
             <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="h-full w-full object-cover object-bottom" style={{ transform: "scale(1.2)", transformOrigin: "72% 100%" }} />
           </div>
         </div>
-        <div className="mt-6 flex justify-center">
-          <video src={playTrainNewVideo} autoPlay muted loop playsInline className="aspect-[4/5] w-full max-w-md rounded-3xl object-cover object-center" />
-        </div>
+        <img src={playTrainBall} alt="A shepherd mix resting on the grass with an orange ball in its mouth" className="mt-6 aspect-[16/9] w-full rounded-3xl object-cover object-[50%_20%]" />
         <div className="mt-6 grid gap-6 sm:grid-cols-2">
-          <img src={playTrainBall} alt="A shepherd mix resting on the grass with an orange ball in its mouth" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
+          <video src={playTrainNewVideo} autoPlay muted loop playsInline className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
           <video src={playTrainVideo} autoPlay muted loop playsInline className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
         </div>
       </section>
