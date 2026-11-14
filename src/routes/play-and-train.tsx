@@ -3,7 +3,6 @@ import { SiteContact } from "@/components/site-contact";
 import playTrain1 from "@/assets/play-train-1.jpg";
 import playTrain2 from "@/assets/play-train-2.jpg";
 import playTrain3 from "@/assets/play-train-3.jpg";
-import playTrain4Asset from "@/assets/play-train-4.jpg.asset.json";
 import playTrainBall from "@/assets/play-train-orange-ball.jpg";
 import playTrainVideo from "@/assets/play-train-blue-ball.mp4";
 import playTrainNewVideo from "@/assets/play-train-new-video.mp4";
@@ -57,11 +56,8 @@ function PlayTrainPage() {
           <img src={playTrain1} alt="Dogs playing together in a play and train group" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
           <img src={playTrain2} alt="Dogs practicing good manners on an outing" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
           <img src={playTrain3} alt="A happy, tired dog after a day of play and training" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
-          <div className="aspect-[4/3] w-full overflow-hidden rounded-3xl">
-            <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="h-full w-full object-cover object-bottom" style={{ transform: "scale(1.2)", transformOrigin: "72% 100%" }} />
-          </div>
+          <img src={playTrainBall} alt="A shepherd mix resting on the grass with an orange ball in its mouth" className="aspect-[4/3] w-full rounded-3xl object-cover object-center" />
         </div>
-        <img src={playTrainBall} alt="A shepherd mix resting on the grass with an orange ball in its mouth" className="mt-6 aspect-[16/9] w-full rounded-3xl object-cover object-[50%_20%]" />
         <div className="mt-6 grid gap-6 sm:grid-cols-2">
           <video src={playTrainNewVideo} autoPlay muted loop playsInline className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
           <video src={playTrainVideo} autoPlay muted loop playsInline className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
