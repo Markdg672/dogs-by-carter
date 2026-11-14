@@ -124,7 +124,7 @@ function Index() {
           </span>
           <div className="flex flex-wrap items-center justify-center gap-3 justify-self-center md:justify-self-end">
             <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] px-4 py-2 text-base font-bold text-white">Instagram</a>
-            <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
+            <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-[#D32323] px-4 py-2 text-base font-bold text-white">Yelp</a>
             <a href={`tel:${PHONE}`} className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink md:px-5 md:text-lg">
               {PHONE}
             </a>
@@ -236,7 +236,7 @@ function Index() {
               href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter"
               target="_blank"
               rel="noreferrer"
-              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+              className="inline-block rounded-full bg-[#D32323] px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:opacity-90"
             >
               Yelp — Dogs by Carter <span aria-hidden="true">→</span>
             </a>
@@ -312,8 +312,7 @@ function Index() {
             className="font-bold text-primary underline underline-offset-4"
           >
             Yelp
-          </a>{" "}
-          — 12 reviews and counting.
+          </a>.
         </p>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <div className="rounded-3xl border bg-card p-6 shadow-sm">

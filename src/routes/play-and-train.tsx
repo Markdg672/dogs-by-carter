@@ -6,6 +6,7 @@ import playTrain3 from "@/assets/play-train-3.jpg";
 import playTrain4Asset from "@/assets/play-train-4.jpg.asset.json";
 import playTrainBall from "@/assets/play-train-orange-ball.jpg";
 import playTrainVideo from "@/assets/play-train-blue-ball.mp4";
+import playTrainNewVideo from "@/assets/play-train-new-video.mp4";
 import contactRottweilerBall from "@/assets/contact-rottweiler-ball.jpg";
 
 export const Route = createFileRoute("/play-and-train")({
@@ -39,7 +40,7 @@ function PlayTrainPage() {
           <Link to="/" className="text-center font-display text-2xl font-semibold leading-none underline decoration-highlight decoration-2 underline-offset-8 md:text-[2.6rem]">Dogs <span className="font-normal italic text-ink-foreground/75">by</span> <span className="text-highlight">Carter</span></Link>
           <div className="flex flex-wrap items-center justify-center gap-3 justify-self-center md:justify-self-end">
             <a href="https://www.instagram.com/dogsbycarterllc/" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] px-4 py-2 text-base font-bold text-white">Instagram</a>
-            <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Yelp</a>
+            <a href="https://www.yelp.com/biz/dogs-by-carter-san-fernando-valley?osq=dogs+by+carter" target="_blank" rel="noreferrer" className="whitespace-nowrap rounded-full bg-[#D32323] px-4 py-2 text-base font-bold text-white">Yelp</a>
             <a href="tel:9493049888" className="whitespace-nowrap rounded-full bg-highlight px-5 py-2 text-lg font-bold text-ink">(949) 304-9888</a>
           </div>
         </nav>
@@ -59,6 +60,9 @@ function PlayTrainPage() {
           <div className="aspect-[4/3] w-full overflow-hidden rounded-3xl">
             <img src={playTrain4Asset.url} alt="A German Shepherd leaping to catch a ball during a play and train session" className="h-full w-full object-cover object-bottom" style={{ transform: "scale(1.2)", transformOrigin: "72% 100%" }} />
           </div>
+        </div>
+        <div className="mt-6 flex justify-center">
+          <video src={playTrainNewVideo} autoPlay muted loop playsInline className="aspect-[4/5] w-full max-w-md rounded-3xl object-cover object-center" />
         </div>
         <div className="mt-6 grid gap-6 sm:grid-cols-2">
           <img src={playTrainBall} alt="A shepherd mix resting on the grass with an orange ball in its mouth" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
