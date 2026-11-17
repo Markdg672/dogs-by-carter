@@ -6,16 +6,16 @@ const YELP_URL =
 
 const FAQS = [
   {
+    q: "How do I book or ask a question?",
+    a: "Call or text (949) 304-9888, or email dogsbycarter@gmail.com.",
+  },
+  {
     q: "What services does Dogs by Carter offer?",
     a: "boarding/daycare, board and train, private coaching, play and train, grooming",
   },
   {
     q: "Where are you located?",
     a: "In Northridge, in the San Fernando Valley. Scroll down to see maps.",
-  },
-  {
-    q: "How do I book or ask a question?",
-    a: "Call or text (949) 304-9888, or email dogsbycarter@gmail.com.",
   },
   {
     q: "What is Board and Train?",

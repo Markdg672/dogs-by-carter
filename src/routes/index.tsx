@@ -268,16 +268,16 @@ function Index() {
         <h2 className="text-center text-3xl text-primary md:text-4xl">Frequently Asked Questions</h2>
         <div className="mx-auto mt-8 max-w-3xl space-y-6">
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
+            <h3 className="text-2xl text-primary">How do I book?</h3>
+            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">Call or text (949) 304-9888, or email dogsbycarter@gmail.com.</p>
+          </div>
+          <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h3 className="text-2xl text-primary">What services does Dogs by Carter offer?</h3>
             <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">boarding/daycare, board and train, private coaching, play and train, grooming</p>
           </div>
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h3 className="text-2xl text-primary">Where are you located?</h3>
             <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">In Northridge, in the San Fernando Valley. Scroll down to see maps.</p>
-          </div>
-          <div className="rounded-3xl border bg-card p-6 shadow-sm">
-            <h3 className="text-2xl text-primary">How do I book?</h3>
-            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">Call or text (949) 304-9888, or email dogsbycarter@gmail.com.</p>
           </div>
         </div>
         <div className="mt-8 text-center">
