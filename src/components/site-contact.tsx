@@ -12,12 +12,15 @@ export function SiteContact({ photo, photoAlt }: { photo?: string; photoAlt?: st
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2">
           <div>
             <h2 className="text-4xl md:text-5xl">Let's talk about your dog.</h2>
-            <p className="mt-5 text-lg">
+            <p className="mt-5 text-lg font-bold text-white">
               Call, text, or email to discuss your goals and find the program that best fits your
               lifestyle.
             </p>
             <div className="mt-8 space-y-2 text-xl font-semibold">
-              <a href={`tel:${PHONE}`} className="block text-highlight">{PHONE}</a>
+              <div className="flex flex-wrap items-center gap-3">
+                <a href={`tel:${PHONE}`} className="text-highlight">{PHONE}</a>
+                <a href={`tel:${PHONE}`} className="rounded-full bg-highlight px-4 py-2 text-base font-bold text-ink">Call now</a>
+              </div>
               <a href={`mailto:${EMAIL}`} className="block">{EMAIL}</a>
             </div>
             <img
