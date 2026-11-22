@@ -11,7 +11,7 @@ import slideMalinois from "@/assets/malinois-hug.jpg";
 import coachingPark from "@/assets/home-coaching-park.jpg";
 import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
 import boardTrainResting from "@/assets/home-board-train-resting.jpg";
-import groomingTub from "@/assets/grooming-tub.jpeg";
+import groomingTubRottweiler from "@/assets/grooming-tub-rottweiler.jpg";
 
 const SLIDES = [
   { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-top" },
@@ -109,7 +109,7 @@ const services = [
     name: "Grooming",
     tag: "Bath & Grooming",
     lines: ["Bath with brush", "Teeth brushing", "Ear cleaning", "Shave", "Face & feet sanitary trim", "Flea bath"],
-    img: groomingTub,
+    img: groomingTubRottweiler,
   },
   {
     name: "Coaching by Carter",
