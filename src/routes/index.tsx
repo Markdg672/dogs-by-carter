@@ -11,7 +11,7 @@ import slideMalinois from "@/assets/malinois-hug.jpg";
 import coachingPark from "@/assets/home-coaching-park.jpg";
 import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
 import boardTrainResting from "@/assets/home-board-train-resting.jpg";
-import groomingTubYawn from "@/assets/grooming-tub-yawn.jpg";
+import groomingTub from "@/assets/grooming-tub.jpeg";
 
 const SLIDES = [
   { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-top" },
@@ -109,7 +109,7 @@ const services = [
     name: "Grooming",
     tag: "Bath & Grooming",
     lines: ["Bath with brush", "Teeth brushing", "Ear cleaning", "Shave", "Face & feet sanitary trim", "Flea bath"],
-    img: groomingTubYawn,
+    img: groomingTub,
   },
   {
     name: "Coaching by Carter",
@@ -184,7 +184,7 @@ function Index() {
           {services.map((s) => (
             <article key={s.name} className="flex flex-col overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
               {s.img ? (
-                <img src={s.img} alt={s.name} loading="lazy" className={"aspect-[4/3] w-full object-cover " + (s.name === "Board and Train" ? "object-bottom" : s.name === "Grooming" ? "object-[50%_30%]" : "object-center")} />
+                <img src={s.img} alt={s.name} loading="lazy" className={"aspect-[4/3] w-full object-cover " + (s.name === "Board and Train" ? "object-bottom" : "object-center")} />
               ) : (
                 <div className="flex aspect-[4/3] items-end bg-ink p-8 text-ink-foreground">
                   <span className="font-display text-5xl leading-none">
