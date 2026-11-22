@@ -11,7 +11,7 @@ const FAQS = [
   },
   {
     q: "What services does Dogs by Carter offer?",
-    a: "boarding/daycare, board and train, private coaching, play and train, grooming",
+    a: "boarding/daycare, board and train, private coaching, structured daycare, grooming",
   },
   {
     q: "Where are you located?",
@@ -22,7 +22,7 @@ const FAQS = [
     a: "A highly personalized, immersive program. Your dog lives in Carter's home — not a kennel — with a customized training plan, training in real-world environments like cafés, restaurants, parks, and hiking trails, and direct owner coaching during and after training.",
   },
   {
-    q: "What is Play and Train?",
+    q: "What is Structured Daycare?",
     a: "A hybrid between daycare and training. Structured play groups, outings to parks, hiking trails, and other dog-friendly spots, with training woven naturally through the day. Every dog is matched by temperament, energy level, and play style.",
   },
   {

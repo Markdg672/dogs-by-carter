@@ -11,13 +11,13 @@ import contactRottweilerBall from "@/assets/contact-rottweiler-ball.jpg";
 export const Route = createFileRoute("/play-and-train")({
   head: () => ({
     meta: [
-      { title: "Play & Train — Daycare & Training Hybrid" },
+      { title: "Structured Daycare — Daycare & Training Hybrid" },
       {
         name: "description",
         content:
           "A hybrid between daycare and training: structured play groups, real-world outings, and training woven naturally through the day.",
       },
-      { property: "og:title", content: "Play & Train — Daycare & Training Hybrid" },
+      { property: "og:title", content: "Structured Daycare — Daycare & Training Hybrid" },
       {
         property: "og:description",
         content:
@@ -45,10 +45,10 @@ function PlayTrainPage() {
         </nav>
       </header>
       <section className="mx-auto max-w-6xl px-6 pb-16 pt-8">
-        <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Play & Train</h1>
+        <h1 className="text-center text-4xl leading-tight text-primary md:text-6xl">Structured Daycare</h1>
         <p className="mx-auto mt-4 max-w-3xl text-center font-body text-2xl font-medium leading-relaxed">A Hybrid Between Daycare and Training</p>
         <div className="mx-auto mt-6 max-w-3xl space-y-4 font-body text-lg leading-relaxed tracking-normal text-foreground/95 md:text-xl">
-          <p>Play & Train combines the fun and socialization of daycare with the structure and purpose of professional training.</p>
+          <p>Structured Daycare combines the fun and socialization of daycare with the structure and purpose of professional training.</p>
           <p>Unlike traditional daycare, your dog gets out and about — enjoying outings to parks, hiking trails, and other dog-friendly spots while practicing good manners and social skills in new settings.</p>
           <p>Structured play groups build healthy socialization, and training is woven naturally through the day to reinforce calm behavior, confidence, and responsiveness. Every dog is matched by temperament, energy level, and play style for a safe, enjoyable, and productive environment.</p>
         </div>

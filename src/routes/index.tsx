@@ -11,6 +11,7 @@ import slideMalinois from "@/assets/malinois-hug.jpg";
 import coachingPark from "@/assets/home-coaching-park.jpg";
 import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
 import boardTrainResting from "@/assets/home-board-train-resting.jpg";
+import groomingTubYawn from "@/assets/grooming-tub-yawn.jpg";
 
 const SLIDES = [
   { src: slideMalinois, alt: "Carter hugging a Belgian Malinois in the yard", pos: "object-top" },
@@ -63,7 +64,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Board and train, play and train daycare, private coaching, and in-home boarding by Carter. Real training, real results.",
+          "Board and train, structured daycare, private coaching, and in-home boarding by Carter. Real training, real results.",
       },
       { property: "og:title", content: "Dogs by Carter — Real Training, Real Results" },
       {
@@ -99,10 +100,16 @@ const services = [
     img: boardingShepherd,
   },
   {
-    name: "Play and Train",
+    name: "Structured Daycare",
     tag: "Daycare & Training Hybrid",
     lines: ["Social play", "Structured training", "A tired, happy dog"],
     img: playImg,
+  },
+  {
+    name: "Grooming",
+    tag: "Bath & Grooming",
+    lines: ["Bath with brush", "Teeth brushing", "Ear cleaning", "Shave", "Face & feet sanitary trim", "Flea bath"],
+    img: groomingTubYawn,
   },
   {
     name: "Coaching by Carter",
@@ -177,7 +184,7 @@ function Index() {
           {services.map((s) => (
             <article key={s.name} className="flex flex-col overflow-hidden rounded-3xl border bg-card text-center shadow-lg">
               {s.img ? (
-                <img src={s.img} alt={s.name} loading="lazy" className={"aspect-[4/3] w-full object-cover " + (s.name === "Board and Train" ? "object-bottom" : "object-center")} />
+                <img src={s.img} alt={s.name} loading="lazy" className={"aspect-[4/3] w-full object-cover " + (s.name === "Board and Train" ? "object-bottom" : s.name === "Grooming" ? "object-[50%_30%]" : "object-center")} />
               ) : (
                 <div className="flex aspect-[4/3] items-end bg-ink p-8 text-ink-foreground">
                   <span className="font-display text-5xl leading-none">
@@ -199,9 +206,14 @@ function Index() {
                     </li>
                   ))}
                 </ul>
-                {s.name === "Play and Train" && (
+                {s.name === "Structured Daycare" && (
                   <Link to="/play-and-train" className={CTA}>
-                    Explore Play &amp; Train <span aria-hidden="true">→</span>
+                    Explore Daycare <span aria-hidden="true">→</span>
+                  </Link>
+                )}
+                {s.name === "Grooming" && (
+                  <Link to="/grooming-by-carter" className={CTA}>
+                    Explore Grooming <span aria-hidden="true">→</span>
                   </Link>
                 )}
                 {s.name === "Board and Train" && (
@@ -273,7 +285,7 @@ function Index() {
           </div>
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h3 className="text-2xl text-primary">What services does Dogs by Carter offer?</h3>
-            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">boarding/daycare, board and train, private coaching, play and train, grooming</p>
+            <p className="mt-2 font-body text-lg leading-relaxed text-foreground/90">boarding/daycare, board and train, private coaching, structured daycare, grooming</p>
           </div>
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h3 className="text-2xl text-primary">Where are you located?</h3>

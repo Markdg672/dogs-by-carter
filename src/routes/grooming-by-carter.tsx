@@ -1,6 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteContact } from "@/components/site-contact";
 import groomingTub from "@/assets/grooming-tub.jpeg";
+import groomingTubYawn from "@/assets/grooming-tub-yawn.jpg";
+import groomingTubGolden from "@/assets/grooming-tub-golden.jpg";
+import groomingTubVideo from "@/assets/grooming-tub-video.mp4";
 import contactMalinoisBall from "@/assets/contact-malinois-ball.jpg";
 
 // Carter's Google Calendar grooming booking link.
@@ -78,8 +81,13 @@ function GroomingPage() {
           <div className="flex flex-col justify-center space-y-7 font-body text-xl leading-relaxed tracking-normal text-foreground/95 md:text-2xl">
             <p>Grooming happens in our professional tub, with care for dogs who need a gentle touch — including rescues and dogs with sensitive skin.</p>
             <p>Every groom ends with a clean, dry, brushed-out dog. If you are not sure which service your dog needs, call or text and we will help you pick.</p>
-            <p className="font-semibold">Prices: call or text (949) 304-9888 for pricing.</p>
+            <p className="font-semibold">Bath &amp; Brush prices start at $30 — see the full price list below.</p>
           </div>
+        </div>
+        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          <img src={groomingTubYawn} alt="A wet black and tan dog yawning in the grooming tub" loading="lazy" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
+          <img src={groomingTubGolden} alt="A wet golden retriever getting sprayed in the grooming tub" loading="lazy" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
+          <video src={groomingTubVideo} autoPlay muted loop playsInline className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
         </div>
         <section aria-labelledby="services-heading" className="mx-auto mt-16 max-w-4xl">
           <h2 id="services-heading" className="mb-8 text-center text-3xl leading-tight text-primary md:text-5xl">Grooming services</h2>
@@ -91,6 +99,46 @@ function GroomingPage() {
               </li>
             ))}
           </ul>
+          <div className="mt-10 text-center">
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block rounded-full bg-primary px-8 py-4 text-lg font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 hover:bg-ink"
+            >
+              Book grooming online →
+            </a>
+          </div>
+        </section>
+        <section aria-labelledby="pricing-heading" className="mx-auto mt-16 max-w-4xl">
+          <h2 id="pricing-heading" className="mb-4 text-center text-3xl leading-tight text-primary md:text-5xl">Bath &amp; Brush pricing</h2>
+          <p className="mx-auto max-w-2xl text-center font-body text-lg leading-relaxed text-foreground/80 md:text-xl">Every Bath &amp; Brush includes bath, brush, nail trim, blow-dry, teeth brushing, and ear cleaning.</p>
+          <div className="mt-8 overflow-hidden rounded-3xl border bg-card shadow-sm">
+            <table className="w-full text-left font-body text-lg md:text-xl">
+              <thead>
+                <tr className="border-b bg-primary/5 text-primary">
+                  <th className="px-6 py-4 font-bold">Dog size</th>
+                  <th className="px-6 py-4 font-bold">Weight</th>
+                  <th className="px-6 py-4 text-right font-bold">Price</th>
+                </tr>
+              </thead>
+              <tbody className="text-foreground/95">
+                <tr className="border-b"><td className="px-6 py-4 font-semibold">Toy</td><td className="px-6 py-4">Under 10 lbs</td><td className="px-6 py-4 text-right font-semibold">$30</td></tr>
+                <tr className="border-b"><td className="px-6 py-4 font-semibold">Small</td><td className="px-6 py-4">10–25 lbs</td><td className="px-6 py-4 text-right font-semibold">$40</td></tr>
+                <tr className="border-b"><td className="px-6 py-4 font-semibold">Medium</td><td className="px-6 py-4">26–50 lbs</td><td className="px-6 py-4 text-right font-semibold">$50</td></tr>
+                <tr className="border-b"><td className="px-6 py-4 font-semibold">Large</td><td className="px-6 py-4">51–80 lbs</td><td className="px-6 py-4 text-right font-semibold">$65</td></tr>
+                <tr className="border-b"><td className="px-6 py-4 font-semibold">XL</td><td className="px-6 py-4">81–110 lbs</td><td className="px-6 py-4 text-right font-semibold">$85</td></tr>
+                <tr><td className="px-6 py-4 font-semibold">Giant</td><td className="px-6 py-4">Over 110 lbs</td><td className="px-6 py-4 text-right font-semibold">$105+</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 className="mt-10 text-center text-2xl text-primary">Add-ons</h3>
+          <ul className="mx-auto mt-4 max-w-xl space-y-2 font-body text-lg leading-relaxed text-foreground/95 md:text-xl">
+            <li className="flex justify-between border-b pb-2"><span>De-shedding</span><span className="font-semibold">$15–35</span></li>
+            <li className="flex justify-between border-b pb-2"><span>Face, Feet &amp; Sanitary Trim</span><span className="font-semibold">$15–35</span></li>
+            <li className="flex justify-between"><span>Flea Bath</span><span className="font-semibold">$15–35</span></li>
+          </ul>
+          <p className="mx-auto mt-6 max-w-2xl text-center font-body text-base leading-relaxed text-foreground/70">Starting prices. Final pricing may vary based on coat condition, breed, temperament, and grooming time.</p>
           <div className="mt-10 text-center">
             <a
               href={BOOKING_URL}
