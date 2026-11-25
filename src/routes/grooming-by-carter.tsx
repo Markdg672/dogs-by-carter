@@ -74,7 +74,7 @@ function GroomingPage() {
           >
             Book grooming online →
           </a>
-          <p className="mt-4 font-body text-lg text-foreground/80">Pick your service, date, and time. Tuesdays 9am–5pm and Saturdays 10am–6pm.</p>
+          <p className="mt-4 font-body text-lg text-foreground/80">Pick your service, date, and time. <a href="tel:9493049888" className="font-bold text-primary underline">Call now</a> to schedule or ask questions.</p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           <img src={groomingTub} alt="Stainless steel grooming tub with handheld sprayer and safety loops" className="aspect-[4/5] w-full rounded-3xl object-cover object-center" />
