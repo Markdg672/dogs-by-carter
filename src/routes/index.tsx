@@ -8,6 +8,8 @@ import heroSlidePaw from "@/assets/hero-slide-paw.jpg";
 import heroSlideTug from "@/assets/hero-slide-tug.jpg";
 import heroSlideJump from "@/assets/hero-slide-jump.jpg";
 import slideMalinois from "@/assets/malinois-hug.jpg";
+import slideRottweilerBall from "@/assets/slide-rottweiler-ball.jpg";
+import slideAussieHug from "@/assets/slide-aussie-hug.jpg";
 import coachingPark from "@/assets/home-coaching-park.jpg";
 import boardingShepherd from "@/assets/home-boarding-shepherd.jpg";
 import boardTrainResting from "@/assets/home-board-train-resting.jpg";
@@ -20,6 +22,8 @@ const SLIDES = [
   { src: heroSlidePaw, alt: "Carter kneeling as a white dog gives him its paw", pos: "object-center" },
   { src: heroSlideTug, alt: "A white dog tugging a toy on the turf", pos: "object-center" },
   { src: heroSlideJump, alt: "A brown dog leaping to catch a red ball in the backyard", pos: "object-[25%_center]" },
+  { src: slideRottweilerBall, alt: "Carter smiling with a Rottweiler holding an orange ball in the park", pos: "object-center" },
+  { src: slideAussieHug, alt: "Carter hugging a tri-color Australian Shepherd in the backyard", pos: "object-center" },
 ];
 
 function HeroSlideshow() {
